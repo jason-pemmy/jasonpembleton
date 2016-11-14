@@ -65,6 +65,7 @@ class Theme_Enqueues extends Base_Factory {
 
 				// components
 				Theme_Enqueues::iterate_enqueue( array(
+					'navbar-toggle',
 				) );
 
 				// pages
@@ -108,8 +109,8 @@ class Theme_Enqueues extends Base_Factory {
 
 
 			// all pages - our stuff
-			// wp_enqueue_script( 'main-scripts', $js_directory . 'scripts.js', array( 'jquery' ), false, true );
-			// wp_enqueue_script( 'navigation', $js_directory . 'navigation.js', array( 'jquery' ), false, true );
+			wp_enqueue_script( 'main-scripts', $js_directory . 'scripts.js', array( 'jquery' ), false, true );
+			//wp_enqueue_script( 'navigation', $js_directory . 'navigation.js', array( 'jquery' ), false, true );
 		}
 	}
 

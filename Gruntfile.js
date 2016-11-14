@@ -130,6 +130,7 @@ module.exports = function (grunt){
 						// layout
 
 						// components
+						'navbar-toggle',
 
 						// pages
 

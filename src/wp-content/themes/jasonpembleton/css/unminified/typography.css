@@ -1,8 +1,21 @@
+html,
 body {
-  font-size: 18px;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html,
+  body {
+    font-size: 21px;
+  }
 }
 a:not([class]) {
-  color: #3bb0c9;
+  color: #87c54e;
   text-decoration: none;
 }
 a:not([class]):hover,
@@ -60,7 +73,6 @@ h3 {
   font-weight: 600;
   font-size: 1.999em;
   line-height: 1;
-  text-transform: uppercase;
   letter-spacing: -0.025em;
   color: #000;
 }
@@ -68,7 +80,6 @@ h4 {
   font-family: "freight-display-pro", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1em;
   font-size: 1.800em;
   text-transform: uppercase;
   letter-spacing: -0.025em;
@@ -101,7 +112,7 @@ p {
   margin-bottom: 40px;
   line-height: 1.4;
   color: #161616;
-  font-size: 18px;
+  font-size: 1em;
 }
 @media screen and (min-width: 768px) {
   p {
