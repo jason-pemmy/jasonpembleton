@@ -1,0 +1,449 @@
+@import '../utils/utils.less';
+
+form {
+	select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"] {
+		display: block;
+		width: 100%;
+		height: 3rem;
+		padding: 0 1rem;
+		#proxima .regular;
+		font-size: 1.125rem;
+		color: @grey-dark;
+		background: @white;
+		border-top: 0 !important; // override bootstrap
+		border-right: 0 !important; // override bootstrap
+		border-bottom: 1px solid @grey;
+		border-left: 0 !important; // override bootstrap
+		border-radius: 0;
+
+		@media @mq-sm-min {
+			height: 4rem;
+			font-size: 1.313rem;
+		}
+
+		&:hover,
+		&:focus {
+			border-bottom-color: @primary;
+			outline: none !important; // override bootstrap
+			box-shadow: none !important; // override bootstrap
+		}
+	}
+
+	textarea {
+		height: 10rem;
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+
+		@media @mq-sm-min {
+			height: 15rem;
+		}
+	}
+
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		text-indent: 0.01px;
+		text-overflow: '';
+
+		&::-ms-expand {
+			display: none;
+		}
+	}
+}
+
+
+.gform_wrapper form,
+.gform_confirmation_wrapper {
+	margin-bottom: 3rem;
+	padding: 2rem 1.75rem;
+	background-color: @off-white;
+
+	@media @mq-sm-min {
+		padding: 3rem 2rem;
+		margin-bottom: 4.5rem;
+	}
+
+	@media @mq-lg-min {
+		padding: 4rem 3rem;
+		margin-bottom: 6rem;
+	}
+}
+
+.gform_confirmation_message {
+	text-align: center;
+}
+
+.gform_wrapper {
+	.validation_error {
+		margin-bottom: 1rem;
+
+		&::after {
+			content: ':';
+		}
+	}
+
+	.validation_list {
+		margin-bottom: 2rem;
+		padding-left: 1rem;
+
+		@media @mq-sm-min {
+			padding-left: 2rem;
+		}
+
+		@media @mq-lg-min {
+			padding-left: 2.5rem;
+		}
+	}
+}
+
+.gform_fields {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.gfield {
+	& + .gfield {
+		margin-top: 1.5rem;
+	}
+}
+
+.gfield_contains_required {
+	.ginput_container {
+		position: relative;
+
+		&::after {
+			font-size: 2rem;
+			content: '*';
+		}
+	}
+}
+
+.gfield_error {
+	select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"] {
+		border-bottom-color: @red;
+
+		&:hover,
+		&:focus {
+			border-bottom-color: @primary;
+		}
+	}
+
+	.ginput_container {
+		&::after {
+			font-size: 1.5rem;
+			color: @red;
+			content: '!';
+		}
+	}
+	.validation_message {
+		color: @red;
+	}
+}
+
+.ginput_container {
+	max-width: 32.125rem;
+
+	&::after {
+		position: absolute;
+		top: .5rem;
+		right: -.9rem;
+		#proxima .regular;
+		color: @red;
+
+		@media @mq-sm-min {
+			top: 1rem;
+			right: -1.5rem;
+		}
+	}
+}
+
+.ginput_container_select {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 1px;
+		width: 2.625rem;
+		.icomoon();
+		font-size: .5rem;
+		line-height: 4rem;
+		text-align: center;
+		color: @primary;
+		background-color: @white;
+		.icon-caret-down();
+		pointer-events: none;
+	}
+}
+
+.gfield_label {
+	display: inline-block;
+	width: auto;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	margin-left: 1.125rem;
+	#proxima .semibold;
+	font-size: 1rem;
+	line-height: 1;
+	.letter-spacing(0);
+	color: @black;
+	border-bottom: 0;
+
+	@media @mq-sm-min {
+		font-size: 1.313rem;
+	}
+
+
+	&::after {
+		content: ':';
+	}
+}
+
+.gfield_required {
+	.sr-only();
+}
+
+.gfield_description {
+	#dagny .regular;
+	font-size: .875rem;
+	line-height: 1;
+	.letter-spacing(30);
+	color: @red;
+	margin-top: .5rem;
+	margin-left: 1.125rem;
+}
+
+.gfield_radio,
+.gfield_checkbox {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 2rem;
+	}
+
+	input {
+		.sr-only();
+
+		&:hover,
+		&:focus {
+			& + label {
+				&::before {
+					border-color: @primary;
+				}
+			}
+		}
+	}
+
+	label {
+		position: relative;
+		padding-left: 2rem;
+		margin: 0;
+		font-size: 1rem;
+		font-weight: normal;
+
+		@media @mq-sm-min {
+			font-size: 1.125rem;
+		}
+
+		@media @mq-lg-min {
+			font-size: 1.313rem;
+		}
+
+		&:hover,
+		&:focus {
+			&::before {
+				border-color: @primary;
+			}
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			content: '';
+		}
+
+		&::before {
+			top: 2px;
+			left: 0;
+			.square(20px);
+			border: 1px solid @primary;
+
+			@media @mq-sm-min {
+				top: 3px;
+			}
+
+			@media @mq-lg-min {
+				top: 5px;
+			}
+		}
+
+
+	}
+}
+
+.gfield_radio {
+	input {
+		&:checked {
+			& + label {
+				&::after {
+					background-color: @primary;
+				}
+			}
+		}
+	}
+
+	label {
+		&::before,
+		&::after {
+			border-radius: 50%;
+		}
+
+		&::after {
+			top: 8px;
+			left: 6px;
+			.square(.5rem);
+
+			@media @mq-sm-min {
+				top: 9px;
+			}
+
+			@media @mq-lg-min {
+				top: 11px;
+			}
+		}
+	}
+}
+
+.gfield_checkbox {
+	input {
+		&:checked {
+			& + label {
+				&::after {
+					color: @primary;
+				}
+			}
+		}
+	}
+
+	label {
+		&::after {
+			top: 3px;
+			left: 4px;
+			.icomoon();
+			line-height: 1.125rem;
+			.icon-check();
+			font-size: .625rem;
+			color: transparent;
+
+			@media @mq-lg-min {
+				top: 5px;
+			}
+		}
+	}
+}
+
+.gform_footer {
+	margin-top: 1.5rem;
+
+	button {
+		padding: 1.344rem 2rem;
+		#proxima .semibold;
+		font-size: 1.313rem;
+		line-height: 1;
+		.letter-spacing(25);
+		color: @white;
+		text-transform: uppercase;
+		background-color: @secondary;
+		border: 0;
+		border-radius: 2px;
+
+		&:hover,
+		&:focus {
+			background-color: @primary;
+		}
+	}
+}
+
+.gform_ajax_spinner {
+	padding: 1rem;
+}
+
+.form-inline {
+	.gfield {
+		@media @mq-xs-min {
+			font-size: 0;
+		}
+	}
+
+	.gfield_label {
+		@media @mq-xs-min {
+			display: inline-block;
+			width: 30%;
+			margin: 0;
+			padding-right: .5rem;
+			vertical-align: middle;
+		}
+
+	}
+
+	.ginput_container {
+		@media @mq-xs-min {
+			display: inline-block;
+			width: 70%;
+			padding-left: .5rem;
+			vertical-align: middle;
+		}
+	}
+
+	.gfield_description {
+		@media @mq-xs-min {
+			margin-left: calc(~'30% + 1.125rem');
+		}
+	}
+
+	.gform_footer {
+		text-align: center;
+
+		@media @mq-xs-min {
+			margin-left: 30%;
+		}
+	}
+}

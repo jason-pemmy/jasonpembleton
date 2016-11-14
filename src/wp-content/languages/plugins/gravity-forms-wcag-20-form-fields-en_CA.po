@@ -1,0 +1,97 @@
+# Translation of Development (trunk) in English (Canada)
+# This file is distributed under the same license as the Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-04-03 22:08:08+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Development (trunk)\n"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:439
+msgid "The plugin %s requires Gravity Forms to be installed."
+msgstr "The plugin %s requires Gravity Forms to be installed."
+
+#: gravity_forms_wcag20_form_fields_plugin.php:440
+msgid "Please %s of Gravity Forms and try again."
+msgstr "Please %s of Gravity Forms and try again."
+
+#. Plugin Name of the plugin/theme
+msgid "WCAG 2.0 form fields for Gravity Forms"
+msgstr "WCAG 2.0 form fields for Gravity Forms"
+
+#. Description of the plugin/theme
+msgid "Extends the Gravity Forms plugin. Modifies fields and improves validation so that forms meet WCAG 2.0 accessibility requirements."
+msgstr "Extends the Gravity Forms plugin. Modifies fields and improves validation so that forms meet WCAG 2.0 accessibility requirements."
+
+#. Author of the plugin/theme
+msgid "Adrian Gordon"
+msgstr "Adrian Gordon"
+
+#. Author URI of the plugin/theme
+msgid "https://www.itsupportguides.com"
+msgstr "https://www.itsupportguides.com"
+
+#. Tags of the plugin/theme
+msgid "Gravity Forms, wcag, accessibility, forms"
+msgstr "Gravity Forms, wcag, accessibility, forms"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:438
+msgid "Warning"
+msgstr "Warning"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:381
+msgid "Maximum file size"
+msgstr "Maximum file size"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:384
+msgid "Allowed file extensions"
+msgstr "Allowed file extensions"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:411
+msgid "this link will open in a new window"
+msgstr "this link will open in a new window"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:434
+msgid "download the latest version"
+msgstr "download the latest version"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:337
+msgid "Required"
+msgstr "Required"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:262
+msgctxt "String must have same translation as found in Gravity Forms"
+msgid "Add a row"
+msgstr "Add a row"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:267
+msgctxt "String must have same translation as found in Gravity Forms"
+msgid "Remove this row"
+msgstr "Remove this row"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:292
+msgid "must be %s format"
+msgstr "must be %s format"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:300
+msgid "enter a valid website URL for example http://www.google.com"
+msgstr "enter a valid website URL for example http://www.google.com"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:181
+#: gravity_forms_wcag20_form_fields_plugin.php:183
+msgid "Other"
+msgstr "Other"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:94
+msgid "There was %s error found in the information you submitted"
+msgid_plural "There were %s errors found in the information you submitted"
+msgstr[0] "There was %s error found in the information you submitted"
+msgstr[1] "There were %s errors found in the information you submitted"
+
+#: gravity_forms_wcag20_form_fields_plugin.php:164
+#: gravity_forms_wcag20_form_fields_plugin.php:166
+msgid "File upload"
+msgstr "File upload"

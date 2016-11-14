@@ -1,0 +1,87 @@
+@import '../utils/utils.less';
+
+.vc_toggle {
+	position: relative;
+	padding-bottom: 0;
+	margin-bottom: 0 !important; //override VC
+	border-bottom: 1px solid @off-white;
+	transition: ease-in-out .3s;
+
+
+	.vc_toggle_icon {
+		display: none !important;
+	}
+
+	.vc_toggle_title {
+		z-index: 10;
+		padding-left: 0 !important; // Overwrite VC
+
+		&:after {
+			z-index: 1;
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			margin-top: -6px;
+			.icomoon;
+			font-size: .4em;
+			color: @secondary;
+			transition: all ease .3s;
+			content: "\e901";
+		}
+
+		h4 {
+			display: inline-block;
+			margin: 0;
+			padding: 20px 30px 20px 20px;
+			font-size: 18px;
+			#acumin .regular;
+			text-transform: none;
+			color: @black;
+			transition: all .2s ease;
+
+			@media @mq-sm-min {
+				padding: 30px 20% 30px 30px;
+				font-size: 23px;
+			}
+
+			&:hover,
+			&:focus {
+				color: @secondary;
+				cursor: pointer;
+			}
+		}
+	}
+
+}
+
+.vc_toggle_active {
+	background: @off-white;
+
+	.vc_toggle_title {
+		h4 {
+			color: @secondary;
+		}
+
+		&:after {
+			transform: rotate(-180deg);
+		}
+	}
+
+}
+
+.vc_col-sm-12 .vc_toggle_content {
+	padding: 0 28px !important; // override VC styles
+
+	@media @mq-lg-min {
+		padding: 0 135px !important; // override VC styles
+	}
+
+	p {
+		margin: 0;
+		font-size: 14px;
+
+		@media @mq-sm-min {
+			font-size: 18px;
+		}
+	}
+}

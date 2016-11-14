@@ -1,0 +1,91 @@
+ul:not([class]) li,
+ol:not([class]) li {
+  font-family: "acumin-pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  font-size: 17px;
+  margin-bottom: 31px;
+  color: #000;
+}
+ul:not([class]) {
+  counter-reset: li;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul:not([class]) li {
+  position: relative;
+  padding-left: 33px;
+}
+ul:not([class]) li::before {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  content: "◆";
+  color: #87c54e;
+  font-size: 16px;
+}
+ul:not([class]) li li:first-of-type {
+  margin-top: 25px;
+}
+ol:not([class]) {
+  counter-reset: li;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ol:not([class]) li {
+  position: relative;
+  padding-left: 33px;
+}
+ol:not([class]) li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: counter(li) '.';
+  counter-increment: li;
+  color: #87c54e;
+  font-family: "acumin-pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+}
+ol:not([class]) li li:first-of-type {
+  margin-top: 25px;
+}
+ol:not([class]) li ul:not([class]) {
+  counter-reset: li;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ol:not([class]) li ul:not([class]) li {
+  position: relative;
+  padding-left: 33px;
+}
+ol:not([class]) li ul:not([class]) li::before {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  content: "◆";
+  color: #87c54e;
+  font-size: 16px;
+}
+ol:not([class]) li ul:not([class]) li li:first-of-type {
+  margin-top: 25px;
+}
+ol:not([class]) li > ol:not([class]) {
+  counter-reset: nested;
+}
+ol:not([class]) li > ol:not([class]) > li::before {
+  counter-increment: nested;
+  content: "(" counter(nested) ")";
+}
+ol:not([class]) li > ol:not([class]) > li > ol:not([class]) {
+  counter-reset: nested-twice;
+}
+ol:not([class]) li > ol:not([class]) > li > ol:not([class]) > li::before {
+  counter-increment: nested-twice;
+  content: counter(nested-twice, lower-alpha) ".";
+}
