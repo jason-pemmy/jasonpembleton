@@ -7,29 +7,45 @@
 
 	.mobile-menu {
 		opacity: 1;
-		display: block;
+		visibility: visible;
+		//display: block;
+	}
+	
+	.navbar-main {
+		display: none;
 	}
 } 
 
 .mobile-menu {
 	z-index: 1000;
 	position: fixed;
-	top: 4.5rem;
+	top: 3.2rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	display: none;
-	background-color: #d5eefa;
+	background-color: #106f9c;
 	opacity: 0;
+	visibility: hidden;
 	overflow-y: auto;
 	transition: opacity .2s ease-in-out;
 
 	@media @mq-sm-min {
-		top: 8rem;
+		//top: 8rem;
 	}
 
-	@media @mq-lg-min {
-		display: none !important;
+	@media @mq-md-min {		
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	.mobile-menu-inner {						
+		background-color: #a5c9da;
+		
+		.menu-item-text {
+			color: #000;
+			font-size: 1.5rem;
+			padding-left: 20px;			
+		}
 	}
 }
 

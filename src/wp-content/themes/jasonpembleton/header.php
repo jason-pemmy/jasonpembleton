@@ -45,9 +45,18 @@
 				</nav>				
 			</div>			
 		</header>
-		<div class="mobile-menu">
+		<div class="mobile-menu">			
 			<div class="mobile-menu-inner">			
-				<?php ?>
+				<?php
+					wp_nav_menu( array(
+						'container' => false,
+						'menu' => 'Main Navigation',
+						'menu_class' => 'nav navbar-nav',
+						'link_before' => '<span class="menu-item-text">',
+						'link_after' => '</span>',
+						'walker' => new TBK_Nav_Walker(),
+					));
+				?>
 			</div>
 			<div class="mobile-menu-close-container">
 				<button class="mobile-menu-close sr-only sr-only-focusable">

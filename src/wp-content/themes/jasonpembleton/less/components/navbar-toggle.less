@@ -1,6 +1,6 @@
 @import '../utils/utils.less';
 
-.mobile-menu-open {
+.mobile-menu-open {	
 	.navbar-main-primary-toggle-hamburger-bar { 
 		&:first-child {
 			top: calc(~'50% - 1px');
@@ -30,6 +30,15 @@
 	}
 }
 
+button {
+	background-color: transparent;
+	
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+
 .navbar-main-primary-toggle {
 	float: right;
 	display: inline-block;
@@ -37,22 +46,23 @@
 	padding: 0 1rem;
 	border: 0;
 	margin: 0;
-	margin-top: 10px;
 	border-radius: 0;
-
+	border: none;
+	
 	@media @mq-sm-min {
 		padding: 0 2rem;
 	}
 
-	@media @mq-lg-min {
+	@media @mq-md-min {
 		display: none;
 	}
 
 	&:hover,
 	&:focus {
-		background-color: transparent;
+		border: none;
 		.navbar-main-primary-toggle-hamburger-bar {
 			background-color: @red;
+			border: none;
 		}
 	}
 }
@@ -61,10 +71,11 @@
 	position: relative;
 	width: 1.5rem;
 	height: 1.5rem;
+	margin: 10px;
 
 	@media @mq-sm-min {
-		width: 2.8rem;
-		height: 2.8rem;
+		width: 2.2rem;
+		height: 2.2rem;
 	}
 }
 
