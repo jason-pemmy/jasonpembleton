@@ -37,7 +37,7 @@ class Theme_Enqueues extends Base_Factory {
 				// vendors - all 3rd party styles come first
 				Theme_Enqueues::iterate_enqueue( array(
 					'bootstrap',
-					'js_composer',
+					'js_composer',					
 				) );
 
 				// base
@@ -104,12 +104,12 @@ class Theme_Enqueues extends Base_Factory {
 		if ( ! is_admin() ) {
 			// all pages - 3rd party
 			// wp_enqueue_script( 'typekit', 'https://use.typekit.net/insertURLhere.js', false, false, false );
-			wp_enqueue_script( 'jquery' );
-			// wp_enqueue_script( 'tbk-bootstrap-js', $js_directory . 'vendor/bootstrap.min.js', array( 'jquery' ), false, true );
+			wp_enqueue_script( 'jquery' );			
+			wp_enqueue_script( 'modernizr' , $js_directory . 'vendor/modernizr.js');
 
 
 			// all pages - our stuff
-			wp_enqueue_script( 'main-scripts', $js_directory . 'scripts.js', array( 'jquery' ), false, true );
+			wp_enqueue_script( 'main-scripts', $js_directory . 'scripts.js', array( 'jquery'), false, true );
 			//wp_enqueue_script( 'navigation', $js_directory . 'navigation.js', array( 'jquery' ), false, true );
 		}
 	}

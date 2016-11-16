@@ -36,4 +36,8 @@ class The_Theme extends TBK_Theme {
 	}
 }
 
+if( function_exists('acf_add_options_page') ) {	
+	acf_add_options_page();	
+}
+
 The_Theme::get_instance();

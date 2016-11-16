@@ -45,8 +45,9 @@
 				</nav>				
 			</div>			
 		</header>
-		<div class="mobile-menu">			
-			<div class="mobile-menu-inner">			
+		<div class="mobile-menu">	
+			<div class="tel-link-container"><?php the_field('telephone_number', 'option'); ?></div>
+			<div class="mobile-menu-inner">					
 				<?php
 					wp_nav_menu( array(
 						'container' => false,
@@ -58,6 +59,10 @@
 					));
 				?>
 			</div>
+			<div class="mobile-menu-bottom-container">
+				
+			</div>
+			
 			<div class="mobile-menu-close-container">
 				<button class="mobile-menu-close sr-only sr-only-focusable">
 					<span class="mobile-menu-close-text"><?php _e( 'Close mobile menu', 'the-theme' ); ?></span>

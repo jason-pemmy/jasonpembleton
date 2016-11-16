@@ -11,7 +11,7 @@
 .mobile-menu {
   z-index: 1000;
   position: fixed;
-  top: 3.2rem;
+  top: 3.5rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -19,6 +19,7 @@
   opacity: 0;
   visibility: hidden;
   overflow-y: auto;
+  overflow-x: hidden;
   transition: opacity 0.2s ease-in-out;
 }
 @media screen and (min-width: 768px) {
@@ -29,13 +30,30 @@
     visibility: hidden;
   }
 }
+.mobile-menu .tel-link-container {
+  text-align: center;
+  margin-top: .7rem;
+}
+.mobile-menu .tel-link-container a {
+  color: #fff;
+  font-size: 1.3rem;
+}
 .mobile-menu .mobile-menu-inner {
+  position: relative;
+  top: .3rem;
   background-color: #a5c9da;
 }
 .mobile-menu .mobile-menu-inner .menu-item-text {
   color: #000;
   font-size: 1.5rem;
   padding-left: 20px;
+}
+.mobile-menu .mobile-menu-bottom-container {
+  position: inherit;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #284654;
 }
 .mobile-menu-top-nav {
   float: none;

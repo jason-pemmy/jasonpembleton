@@ -19,7 +19,7 @@
 .mobile-menu {
 	z-index: 1000;
 	position: fixed;
-	top: 3.2rem;
+	top: 3.5rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -27,25 +27,46 @@
 	opacity: 0;
 	visibility: hidden;
 	overflow-y: auto;
+	overflow-x: hidden;
 	transition: opacity .2s ease-in-out;
 
 	@media @mq-sm-min {
 		//top: 8rem;
 	}
 
-	@media @mq-md-min {		
+	@media @mq-md-min {
 		opacity: 0;
 		visibility: hidden;
 	}
 	
-	.mobile-menu-inner {						
-		background-color: #a5c9da;
+	.tel-link-container {
+		text-align: center;		
+		margin-top: .7rem;
+		
+		a {
+			color: #fff;
+			font-size: 1.3rem;
+		}
+	}
+	
+	.mobile-menu-inner {
+		position: relative;
+		top: .3rem;
+		background-color: #a5c9da;		
 		
 		.menu-item-text {
 			color: #000;
 			font-size: 1.5rem;
 			padding-left: 20px;			
 		}
+	}
+	
+	.mobile-menu-bottom-container {
+		position: inherit;
+		bottom: 0;
+		width: 100%;
+		height: 5rem;
+		background-color: #284654;
 	}
 }
 
