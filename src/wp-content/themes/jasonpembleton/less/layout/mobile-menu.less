@@ -52,7 +52,14 @@
 	.mobile-menu-inner {
 		position: relative;
 		top: .3rem;
-		background-color: #a5c9da;		
+		background-color: #a5c9da;				
+		
+		ul li a{
+			transition: background-color .2s ease-in-out;
+			&:hover {
+				background-color: #fff;
+			}
+		}
 		
 		.menu-item-text {
 			color: #000;

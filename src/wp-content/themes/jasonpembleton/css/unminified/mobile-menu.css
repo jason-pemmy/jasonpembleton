@@ -43,6 +43,12 @@
   top: .3rem;
   background-color: #a5c9da;
 }
+.mobile-menu .mobile-menu-inner ul li a {
+  transition: background-color 0.2s ease-in-out;
+}
+.mobile-menu .mobile-menu-inner ul li a:hover {
+  background-color: #fff;
+}
 .mobile-menu .mobile-menu-inner .menu-item-text {
   color: #000;
   font-size: 1.5rem;

@@ -81,6 +81,27 @@ class TBK_Shortcodes extends Base_Factory {
 				),
 			) ),
 		) );
+		
+		$this->register( 'hero-banner', array(
+			'show_settings_on_create' => true,
+			'params' => array(
+				array(
+					'heading' => 'Background Image',
+					'param_name' => 'image',
+					'type' => 'attach_image',
+				),
+                array(					
+					'heading' => 'Heading',
+					'param_name' => 'heading',
+                    'type' => 'textfield',
+				),
+                array(					
+					'heading' => 'Copy',
+					'param_name' => 'copy',
+                    'type' => 'textfield',
+				),
+			),
+		) );
 
 		$this->register( 'basic-container', array(
 			'name' => 'Basic Container',
@@ -139,13 +160,29 @@ class TBK_Shortcodes extends Base_Factory {
 			vc_map( $vc_map );
 		}
 	}
+	
+	function hero_banner( $atts ) {
+		$atts = shortcode_atts( array(
+			'image' => null,
+			'heading' => null,
+            'copy' => null,
+		), $atts );
+
+		if( ! empty( $atts['image'] ) ) {
+			$atts['image'] = TBK_Theme::get_attachment_image_url( $atts['image'], 'hero-banner' );
+		}
+        
+        if(is_front_page()){
+            return TBK_Render::shortcode_view( 'hero-banner', $atts );    
+        }		
+	}
 
 	function custom_bake() {
 		//customize existing vc elements
 		vc_remove_element( 'vc_button' );
 	}
 
-	function hero_banner( $atts ) {
+	/*function hero_banner( $atts ) {
 		$atts = shortcode_atts( array(
 				'parallax' => false,
 				'title' => null,
@@ -167,7 +204,7 @@ class TBK_Shortcodes extends Base_Factory {
 		$atts['banner_attr'] = $src;
 
 		return TBK_Render::shortcode_view( 'hero-banner', apply_filters( 'hero_banner', $atts ) );
-	}
+	}*/
 
 	function phone() {
 		$phone = get_field( 'phone', 'options' );
