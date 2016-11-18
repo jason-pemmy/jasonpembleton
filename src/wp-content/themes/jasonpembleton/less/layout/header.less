@@ -21,8 +21,11 @@
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
 
 .navbar-default {
-	background-color: #fff;
-	border-color: #fff;
+	height: 75px;
+	padding: 0;
+	margin-bottom: 0;
+	background-color: @jp-green;
+	border-color: @jp-green;
 	
 	.navbar-header {
 		.navbar-brand {
@@ -40,7 +43,7 @@
 		display: none;
 
 		@media @mq-md-min {
-			display: block !important;;
-		}
+			display: block !important;
+		}		
 	}	
 }

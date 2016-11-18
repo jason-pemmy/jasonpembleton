@@ -18,8 +18,11 @@
 // @screen-xxl-min = 1800px
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
 .navbar-default {
-  background-color: #fff;
-  border-color: #fff;
+  height: 75px;
+  padding: 0;
+  margin-bottom: 0;
+  background-color: #69a96c;
+  border-color: #69a96c;
 }
 .navbar-default .navbar-header .navbar-brand .logo {
   width: 13.3rem;

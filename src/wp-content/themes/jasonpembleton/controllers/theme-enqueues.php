@@ -66,6 +66,7 @@ class Theme_Enqueues extends Base_Factory {
 				// components
 				Theme_Enqueues::iterate_enqueue( array(
 					'navbar-toggle',
+					'hero-banner',
 				) );
 
 				// pages

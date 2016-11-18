@@ -131,6 +131,7 @@ module.exports = function (grunt){
 
 						// components
 						'navbar-toggle',
+						'hero-banner',
 
 						// pages
 

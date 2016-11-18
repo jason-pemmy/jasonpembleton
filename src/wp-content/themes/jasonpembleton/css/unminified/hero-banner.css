@@ -18,7 +18,7 @@
 // @screen-xxl-min = 1800px
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
 .hero-banner-container {
-  background-color: coral;
+  background-color: #69a96c;
   width: 100%;
-  height: 100vh;
+  min-height: calc(100vh - 150px);
 }
