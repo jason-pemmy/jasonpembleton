@@ -3,11 +3,85 @@
 .page-footer {    
     background-color: @jp-grey;
     min-height: 10rem;
+	height: auto;
+	
+	.footer-image-container {
+		float: left;
+		margin: 20px 20px 0 5px;
+		
+		img {
+			width: 120px;
+		}
+	}
+	
+	.footer-personal-info {
+		padding: 20px 0 0 10px;
+		color: darken(@jp-yellow, 20%);
+		
+		.footer-heading {
+			font-size: 1.4rem;			
+		}
+		
+		.linkedin-link {
+			&:hover {
+				text-decoration: none;
+			}
+			
+			.icon-linkedin {
+				color: darken(@jp-yellow, 20%);
+				font-size: 1.4rem;		
+				transition: all .2s ease-in-out;
+
+				&:hover {
+					color: @jp-yellow;
+				}
+			}	
+		}		
+		
+		.footer-address {
+			display: block;
+			font-size: 0.9rem;
+		}
+		
+		.footer-tel {
+			margin-top: 5px;
+			
+			a {
+				font-size: 0.9rem;
+				color: darken(@jp-yellow, 20%);
+				transition: all .2s ease-in-out;
+				
+				&:hover {
+					text-decoration: none;
+					color: @jp-yellow;
+				}	
+			}
+		}		
+	}
+	
+	.footer-main-menu {
+		clear: both;
+		margin-top: 20px;
+		
+		ul li {
+			&:first-child {
+				margin-top: 20px;	
+			}
+			
+			a {
+				color: @jp-yellow;
+				transition: all .2s ease-in-out;
+				&:hover {
+					background-color: lighten(@jp-grey, 10%);
+				}
+			}
+		}
+	}
     
     .footer-copyright {
         text-align: center;
         a {
             color: darken(@jp-yellow, 30%);
         }        
-    }    
+    }
 }

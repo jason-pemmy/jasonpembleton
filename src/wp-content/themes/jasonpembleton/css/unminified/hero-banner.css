@@ -24,16 +24,31 @@
 }
 .hero-banner-container .hero-banner-text {
   margin: 0 10px 0 10px;
-  padding-top: 12rem;
+  padding-top: 8rem;
   color: #fff;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .hero-banner-container .hero-banner-text {
+    padding-top: 9rem;
+  }
+}
 .hero-banner-container .hero-banner-text .hero-heading {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 768px) {
+  .hero-banner-container .hero-banner-text .hero-heading {
+    font-size: 2rem;
+  }
 }
 .hero-banner-container .hero-banner-text .hero-copy {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .hero-banner-container .hero-banner-text .hero-copy {
+    font-size: 1.5rem;
+  }
 }
 .hero-banner-container .hero-banner-text .arrow-container {
   animation-name: bounce;
@@ -42,7 +57,7 @@
 }
 .hero-banner-container .hero-banner-text .arrow-container .icon-arrow-down2 {
   position: relative;
-  top: 11rem;
+  top: 7rem;
   font-size: 2rem;
 }
 @media screen and (min-width: 768px) {

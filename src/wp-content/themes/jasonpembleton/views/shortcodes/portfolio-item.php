@@ -18,7 +18,7 @@
                     echo $iconStr;
                 ?>
             </div>
-            <div class="item-copy"><?php echo $copy; ?></div>            
+            <div class="item-copy"><?php echo $copy; ?></div>         
         </div>    
     </div> 
-</a>
+</a> 

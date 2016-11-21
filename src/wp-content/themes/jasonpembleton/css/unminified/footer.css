@@ -1,6 +1,62 @@
 .page-footer {
   background-color: #2e2d2d;
   min-height: 10rem;
+  height: auto;
+}
+.page-footer .footer-image-container {
+  float: left;
+  margin: 20px 20px 0 5px;
+}
+.page-footer .footer-image-container img {
+  width: 120px;
+}
+.page-footer .footer-personal-info {
+  padding: 20px 0 0 10px;
+  color: #c88c09;
+}
+.page-footer .footer-personal-info .footer-heading {
+  font-size: 1.4rem;
+}
+.page-footer .footer-personal-info .linkedin-link:hover {
+  text-decoration: none;
+}
+.page-footer .footer-personal-info .linkedin-link .icon-linkedin {
+  color: #c88c09;
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in-out;
+}
+.page-footer .footer-personal-info .linkedin-link .icon-linkedin:hover {
+  color: #f6bd41;
+}
+.page-footer .footer-personal-info .footer-address {
+  display: block;
+  font-size: 0.9rem;
+}
+.page-footer .footer-personal-info .footer-tel {
+  margin-top: 5px;
+}
+.page-footer .footer-personal-info .footer-tel a {
+  font-size: 0.9rem;
+  color: #c88c09;
+  transition: all 0.2s ease-in-out;
+}
+.page-footer .footer-personal-info .footer-tel a:hover {
+  text-decoration: none;
+  color: #f6bd41;
+}
+.page-footer .footer-main-menu {
+  clear: both;
+  margin-top: 20px;
+}
+.page-footer .footer-main-menu ul li:first-child {
+  margin-top: 20px;
+}
+.page-footer .footer-main-menu ul li a {
+  color: #f6bd41;
+  transition: all 0.2s ease-in-out;
+}
+.page-footer .footer-main-menu ul li a:hover {
+  background-color: #484646;
 }
 .page-footer .footer-copyright {
   text-align: center;

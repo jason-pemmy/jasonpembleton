@@ -138,6 +138,27 @@ class TBK_Shortcodes extends Base_Factory {
 				),
 			),
 		) );
+		
+		$this->register( 'about-section', array(
+			'show_settings_on_create' => true,
+			'params' => array(
+				array(
+					'heading' => 'Logo',
+					'param_name' => 'image',
+					'type' => 'attach_image',
+				),
+                array(					
+					'heading' => 'Heading',
+					'param_name' => 'heading',
+                    'type' => 'textfield',
+				),
+                array(					
+					'heading' => 'Copy',
+					'param_name' => 'copy',
+                    'type' => 'textarea_html',
+				),                
+			),
+		) );
         
         $this->register( 'portfolio-container', array(
 			'name' => 'Portfolio Container',

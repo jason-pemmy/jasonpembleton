@@ -50,14 +50,17 @@
 	
 	.mobile-menu-inner {
 		position: relative;
-		background-color: lighten(@jp-blue,5%);
+		background-color: lighten(@jp-blue,5%);		
 		
         ul {
             margin-top: 0;
             
             li a{
                 transition: background-color .2s ease-in-out;
-                &:hover {
+                border-bottom-style: solid;
+				border-bottom-width: 1px;
+				border-bottom-color: lighten(@jp-blue,10%);
+				&:hover {
                     background-color: #fff;
                 }
             }    

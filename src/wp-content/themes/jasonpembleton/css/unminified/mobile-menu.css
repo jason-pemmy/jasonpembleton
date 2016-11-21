@@ -48,6 +48,9 @@
 }
 .mobile-menu .mobile-menu-inner ul li a {
   transition: background-color 0.2s ease-in-out;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #0086d7;
 }
 .mobile-menu .mobile-menu-inner ul li a:hover {
   background-color: #fff;
