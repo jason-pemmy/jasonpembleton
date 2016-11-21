@@ -1,9 +1,6 @@
-@import '../utils/utils.less'; 
+@import '../utils/utils.less';
 
 .mobile-menu-open {
-	body {
-		overflow: hidden;
-	}
 
 	.mobile-menu {
 		opacity: 1;
@@ -38,10 +35,16 @@
 		padding: 1rem 0 1rem 0;
 		text-align: center;				
 		background-color: @jp-black;
+        
+        .icon-phone {
+            margin-right: 5px;
+            color: darken(@white, 50%);
+            font-size: 1.1rem;
+        }
 		
 		a {			
-			color: #fff;
-			font-size: 1.3rem;
+			color: darken(@white, 30%);
+			font-size: 1.3rem; 
 		}
 	}
 	
@@ -49,13 +52,17 @@
 		position: relative;
 		background-color: lighten(@jp-blue,5%);
 		
-		ul li a{
-			transition: background-color .2s ease-in-out;
-			&:hover {
-				background-color: #fff;
-			}
-		}
-		
+        ul {
+            margin-top: 0;
+            
+            li a{
+                transition: background-color .2s ease-in-out;
+                &:hover {
+                    background-color: #fff;
+                }
+            }    
+        }
+        
 		.menu-item-text {
 			color: #000;
 			font-size: 1.5rem;

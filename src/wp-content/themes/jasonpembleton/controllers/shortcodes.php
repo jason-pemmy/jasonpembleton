@@ -102,6 +102,59 @@ class TBK_Shortcodes extends Base_Factory {
 				),
 			),
 		) );
+        
+        $this->register( 'portfolio-item', array(
+			'show_settings_on_create' => true,
+			'params' => array(
+				array(
+					'heading' => 'Logo',
+					'param_name' => 'image',
+					'type' => 'attach_image',
+				),
+                array(					
+					'heading' => 'Heading',
+					'param_name' => 'heading',
+                    'type' => 'textfield',
+				),
+                array(					
+					'heading' => 'Copy',
+					'param_name' => 'copy',
+                    'type' => 'textfield',
+				),
+                array(					
+					'heading' => 'Icon List',
+					'param_name' => 'icon_list',
+                    'type' => 'textfield',
+				),
+                array(					
+					'heading' => 'Background Color',
+					'param_name' => 'bg_color',
+                    'type' => 'textfield',
+				),
+                array(					
+					'heading' => 'URL',
+					'param_name' => 'url',
+                    'type' => 'textfield',
+				),
+			),
+		) );
+        
+        $this->register( 'portfolio-container', array(
+			'name' => 'Portfolio Container',
+			'base' => 'portfolio_container',
+			'as_parent' => array( 'only' => 'portfolio-item' ),
+			'is_container' => true,
+			'content_element' => true,
+			'show_settings_on_create' => false,
+			'params' => array(
+				array(
+					'type' => 'textfield',
+					'heading' => 'Classes',
+					'param_name' => 'classes',
+				),
+			),
+			'js_view' => 'VcColumnView',
+		) );
 
 		$this->register( 'basic-container', array(
 			'name' => 'Basic Container',
@@ -174,6 +227,25 @@ class TBK_Shortcodes extends Base_Factory {
         
         if(is_front_page()){
             return TBK_Render::shortcode_view( 'hero-banner', $atts );    
+        }		
+	}
+    
+    function portfolio_item( $atts ) {
+		$atts = shortcode_atts( array(
+			'image' => null,
+			'heading' => null,
+            'copy' => null,
+            'icon_list' => null,
+            'bg_color' => null,
+            'url' => null,
+		), $atts );
+
+		if( ! empty( $atts['image'] ) ) {
+			$atts['image'] = TBK_Theme::get_attachment_image_url( $atts['image'], 'portfolio-item' );
+		}
+        
+        if(is_front_page()){
+            return TBK_Render::shortcode_view( 'portfolio-item', $atts );    
         }		
 	}
 
@@ -312,6 +384,16 @@ if ( class_exists( 'WPBakeryShortCodesContainer' ) ) {
 	 */
 	class WPBakeryShortCode_Basic_Container extends TBKBakeryContainer {
 		protected function content( $atts = null, $content = null, $view = 'basic-container' ) {
+			$atts = shortcode_atts( array(
+				'classes' => null,
+			), $atts );
+
+			return parent::content( $atts, $content, $view );
+		}
+	}
+    
+    class WPBakeryShortCode_Portfolio_Container extends TBKBakeryContainer {
+		protected function content( $atts = null, $content = null, $view = 'portfolio-container' ) {
 			$atts = shortcode_atts( array(
 				'classes' => null,
 			), $atts );

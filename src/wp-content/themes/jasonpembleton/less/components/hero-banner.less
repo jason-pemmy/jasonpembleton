@@ -26,13 +26,39 @@
 	min-height: calc(~"100vh - 150px");	
 	
 	.hero-banner-text {
+        margin: 0 10px 0 10px;
+        padding-top: 12rem;        
+        color: @white;
+        text-align: center;
 		
 		.hero-heading {
-			
+			font-size: 2.2rem;            
 		}
 		
 		.hero-copy {
+            margin-top: 1rem;
+            font-size: 1.5rem;
 			
 		}
+        
+        .arrow-container {
+            animation-name: bounce;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            .icon-arrow-down2 {
+                position: relative;
+                top: 11rem;
+                font-size: 2rem;
+                
+                @media @mq-sm-min {
+                    top: 10rem;
+                }
+                
+                @media @mq-lg-min {
+                    top: 6rem;
+                    font-size: 1.8rem;
+                }
+            }    
+        }
 	}
 }

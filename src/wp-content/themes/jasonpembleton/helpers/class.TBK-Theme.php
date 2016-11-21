@@ -343,7 +343,7 @@ if ( ! class_exists( 'TBK_Theme' ) ) {
 			}
 
 			if ( ! isset( self::$image_sizes[ $size ] ) ) {
-				wp_die( sprintf( __( 'You must first call TBK_Theme::add_image_size("%s",$your_width,$your_height,$your_crop) to register an ad-hoc image size', 'tbk-theme' ), $size ) );
+				//wp_die( sprintf( __( 'You must first call TBK_Theme::add_image_size("%s",$your_width,$your_height,$your_crop) to register an ad-hoc image size', 'tbk-theme' ), $size ) );
 			}
 
 			// If we get here, we need to ad hoc create an image size

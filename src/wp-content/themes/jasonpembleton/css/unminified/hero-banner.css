@@ -22,3 +22,37 @@
   width: 100%;
   min-height: calc(100vh - 150px);
 }
+.hero-banner-container .hero-banner-text {
+  margin: 0 10px 0 10px;
+  padding-top: 12rem;
+  color: #fff;
+  text-align: center;
+}
+.hero-banner-container .hero-banner-text .hero-heading {
+  font-size: 2.2rem;
+}
+.hero-banner-container .hero-banner-text .hero-copy {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.hero-banner-container .hero-banner-text .arrow-container {
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.hero-banner-container .hero-banner-text .arrow-container .icon-arrow-down2 {
+  position: relative;
+  top: 11rem;
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .hero-banner-container .hero-banner-text .arrow-container .icon-arrow-down2 {
+    top: 10rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-banner-container .hero-banner-text .arrow-container .icon-arrow-down2 {
+    top: 6rem;
+    font-size: 1.8rem;
+  }
+}

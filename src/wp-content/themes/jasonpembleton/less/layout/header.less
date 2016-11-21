@@ -18,7 +18,7 @@
 @mq-xxl-min: ~"screen and (min-width: @{screen-xxl-min})";
 
 // @screen-xxl-min = 1800px
-@mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
+@mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/ 
 
 .navbar-default {
 	height: 75px;
@@ -30,9 +30,13 @@
 	.navbar-header {
 		.navbar-brand {
 			.logo {
-				width: 13.3rem;	
+				width: 13.1rem;	
 				
-				@media @mq-sm-min {
+				@media @mq-xs-min {
+					width: 14rem;
+				}
+                
+                @media @mq-sm-min {
 					width: 15rem;
 				}
 			}	
@@ -41,9 +45,22 @@
 	
 	.navbar-main {	
 		display: none;
+        float: right;
+        margin-top: 10px;
 
 		@media @mq-md-min {
 			display: block !important;
-		}		
+		}
+        
+        .navbar-nav {            
+            li a {
+                transition: all .2s ease-in-out;
+                color: @white;
+                
+                &:hover {
+                    color: @jp-grey;
+                }
+            }
+        }
 	}	
 }

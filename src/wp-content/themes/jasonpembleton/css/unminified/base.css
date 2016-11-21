@@ -12,6 +12,10 @@ html {
 body {
   position: relative;
   font-size: 1rem;
+  overflow-x: hidden;
+}
+body.disable-scrolling {
+  overflow: hidden;
 }
 .main {
   padding-left: 15px;

@@ -1,0 +1,10 @@
+.page-footer {
+  background-color: #2e2d2d;
+  min-height: 10rem;
+}
+.page-footer .footer-copyright {
+  text-align: center;
+}
+.page-footer .footer-copyright a {
+  color: #976a07;
+}

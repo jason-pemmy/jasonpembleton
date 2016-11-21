@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html class="no-js" <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -46,7 +46,10 @@
 			</div>			
 		</header>
 		<div class="mobile-menu">	
-			<div class="tel-link-container"><?php the_field('telephone_number', 'option'); ?></div>
+			<div class="tel-link-container">
+                <span class="icon-phone"></span>
+                <?php the_field('telephone_number', 'option'); ?>
+            </div>
 			<div class="mobile-menu-inner">					
 				<?php
 					wp_nav_menu( array(

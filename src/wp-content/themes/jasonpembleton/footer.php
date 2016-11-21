@@ -10,11 +10,11 @@
 					<strong>
 						<?php echo function_exists('the_field')?get_field( 'company_name', 'option' ):''; ?>.
 					</strong>
-					<a href="<?php echo home_url();?>/terms-conditions">
-						<?php _e('Terms & Conditions', 'the-theme');?>
+					<a href="<?php //echo home_url();?>/terms-conditions">
+						<?php //_e('Terms & Conditions', 'the-theme');?>
 					</a>
-					<a href="<?php echo home_url();?>/privacy-policy">
-						<?php _e('Privacy Policy', 'the-theme');?>
+					<a href="<?php //echo home_url();?>/privacy-policy">
+						<?php //_e('Privacy Policy', 'the-theme');?>
 					</a>
 
 					<div class="credit">

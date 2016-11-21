@@ -1,0 +1,115 @@
+@import '../utils/utils.less';
+
+/*@mq-xs-min: ~"screen and (min-width: @{screen-xs-min})";
+
+// @screen-sm-min = 768px
+@mq-sm-min: ~"screen and (min-width: @{screen-sm-min})";
+
+// @screen-md-min = 992px
+@mq-md-min: ~"screen and (min-width: @{screen-md-min})";
+
+// @screen-lg-min = 1200px
+@mq-lg-min: ~"screen and (min-width: @{screen-lg-min})";
+
+// @screen-xl-min = 1400px
+@mq-xl-min: ~"screen and (min-width: @{screen-xl-min})";
+
+// @screen-xxl-min = 1600px
+@mq-xxl-min: ~"screen and (min-width: @{screen-xxl-min})";
+
+// @screen-xxl-min = 1800px
+@mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
+
+.portfolio-item-link {
+    
+    &:hover {
+        text-decoration: none;    
+    }
+    
+    .portfolio-item-container {
+        width: 100%;
+        height: 350px;
+        cursor: pointer;
+
+        &:hover {
+            .item-detail-overlay-container {
+                //right: 0;
+                margin-left: 0;
+                .item-heading {
+                    color: @white;        
+                }                
+                
+                .item-copy, .icon-container {
+                    color: darken(@white, 20%);        
+                }
+            }
+        }
+        
+        @media @mq-md-min {
+            float: left;
+            width: 33.33%;   
+        }
+
+        .item-logo-container {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            padding-top: 75px;
+
+            img {
+                position: relative;
+                width: 200px;
+                height: 200px;   
+                z-index: 1;
+            }
+        }
+        
+        .item-detail-overlay-container {
+            position: inherit;
+            margin-left: 100%;
+            width: 100%;
+            height: 150px;
+            background-color: fade(@jp-black, 85%);                   
+            transition: all .2s ease-in-out;
+            z-index: 10;
+            overflow: hidden;
+            
+            .item-heading {
+                font-size: 1.8rem;
+                padding: 20px 0 0 20px;
+                color: darken(@white,40%);        
+                transition: all .4s ease-in-out .3s;
+                
+                @media @mq-sm-min {
+                    font-size: 1.4rem;
+                }
+            }
+            
+            .icon-container {
+                float: left;
+                margin: 0 10px 0 0;
+                color: darken(@white,40%);        
+                font-size: 1.2rem;
+                
+                &:first-child {
+                    margin-left: 20px;
+                }
+                
+                @media @mq-sm-min {
+                    font-size: 1rem;
+                }
+            }            
+            .item-copy {
+                clear: both;
+                font-size: 1rem;
+                padding: 5px 5px 0 20px;
+                color: darken(@white,40%);        
+                transition: all .4s ease-in-out .3s;
+                
+                @media @mq-sm-min {
+                    font-size: .8rem;
+                }
+            }
+        }
+    } 
+}
