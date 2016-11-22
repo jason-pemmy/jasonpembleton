@@ -38,6 +38,11 @@
 .mobile-menu .tel-link-container a {
   color: #b3b3b3;
   font-size: 1.3rem;
+  transition: color 0.2s ease-in-out;
+}
+.mobile-menu .tel-link-container a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 .mobile-menu .mobile-menu-inner {
   position: relative;

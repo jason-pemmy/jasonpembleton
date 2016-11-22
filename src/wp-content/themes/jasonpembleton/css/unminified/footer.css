@@ -1,17 +1,17 @@
 .page-footer {
   background-color: #2e2d2d;
-  min-height: 10rem;
+  min-height: 13rem;
   height: auto;
 }
 .page-footer .footer-image-container {
   float: left;
-  margin: 20px 20px 0 5px;
+  margin: 60px 20px 0 5px;
 }
 .page-footer .footer-image-container img {
   width: 120px;
 }
 .page-footer .footer-personal-info {
-  padding: 20px 0 0 10px;
+  padding: 60px 0 0 10px;
   color: #c88c09;
 }
 .page-footer .footer-personal-info .footer-heading {
@@ -46,17 +46,24 @@
 }
 .page-footer .footer-main-menu {
   clear: both;
-  margin-top: 20px;
 }
 .page-footer .footer-main-menu ul li:first-child {
   margin-top: 20px;
 }
+@media screen and (min-width: 768px) {
+  .page-footer .footer-main-menu ul li:first-child {
+    margin-top: 50px;
+  }
+}
 .page-footer .footer-main-menu ul li a {
-  color: #f6bd41;
+  color: #c88c09;
+  background-color: #2e2d2d;
   transition: all 0.2s ease-in-out;
+  font-size: 1.1rem;
+  height: 40px;
 }
 .page-footer .footer-main-menu ul li a:hover {
-  background-color: #484646;
+  color: #f6bd41;
 }
 .page-footer .footer-copyright {
   text-align: center;

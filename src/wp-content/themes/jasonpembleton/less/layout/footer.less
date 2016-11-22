@@ -2,12 +2,12 @@
 
 .page-footer {    
     background-color: @jp-grey;
-    min-height: 10rem;
+    min-height: 13rem;
 	height: auto;
 	
 	.footer-image-container {
 		float: left;
-		margin: 20px 20px 0 5px;
+		margin: 60px 20px 0 5px;
 		
 		img {
 			width: 120px;
@@ -15,7 +15,7 @@
 	}
 	
 	.footer-personal-info {
-		padding: 20px 0 0 10px;
+		padding: 60px 0 0 10px;
 		color: darken(@jp-yellow, 20%);
 		
 		.footer-heading {
@@ -60,19 +60,24 @@
 	}
 	
 	.footer-main-menu {
-		clear: both;
-		margin-top: 20px;
-		
-		ul li {
+		clear: both;       
+        
+		ul li {            
 			&:first-child {
-				margin-top: 20px;	
+				margin-top: 20px;
+                @media @mq-sm-min{
+                   margin-top: 50px;
+                }	
 			}
 			
 			a {
-				color: @jp-yellow;
+				color: darken(@jp-yellow, 20%);
+                background-color: @jp-grey;
 				transition: all .2s ease-in-out;
+                font-size: 1.1rem;
+                height: 40px;
 				&:hover {
-					background-color: lighten(@jp-grey, 10%);
+					color: @jp-yellow;
 				}
 			}
 		}

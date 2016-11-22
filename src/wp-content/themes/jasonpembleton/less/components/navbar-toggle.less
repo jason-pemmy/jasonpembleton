@@ -43,13 +43,17 @@ button {
 	float: right;
 	display: inline-block;
 	height: 100%;
-	padding: 0 1rem;
+	padding: 0 .5rem;
 	border: 0;
 	margin: 0;
 	border-radius: 0; 
 	border: none;
 	
-	@media @mq-sm-min {
+	@media @mq-xs-min {
+		padding: 0 1rem;
+	}
+    
+    @media @mq-sm-min {
 		padding: 0 2rem;
 	}
 

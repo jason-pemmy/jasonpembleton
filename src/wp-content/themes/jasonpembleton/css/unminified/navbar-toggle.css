@@ -34,11 +34,16 @@ button:focus {
   float: right;
   display: inline-block;
   height: 100%;
-  padding: 0 1rem;
+  padding: 0 .5rem;
   border: 0;
   margin: 0;
   border-radius: 0;
   border: none;
+}
+@media screen and (min-width: 480px) {
+  .navbar-main-primary-toggle {
+    padding: 0 1rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .navbar-main-primary-toggle {
