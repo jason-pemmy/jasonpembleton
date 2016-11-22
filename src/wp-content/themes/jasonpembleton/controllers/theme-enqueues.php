@@ -69,6 +69,7 @@ class Theme_Enqueues extends Base_Factory {
 					'hero-banner',
                     'portfolio-container',
                     'portfolio-item',
+					'about-section',
 				) );
 
 				// pages

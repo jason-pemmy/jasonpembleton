@@ -156,7 +156,7 @@ class TBK_Shortcodes extends Base_Factory {
 					'heading' => 'Copy',
 					'param_name' => 'copy',
                     'type' => 'textarea_html',
-				),                
+				),
 			),
 		) );
         
@@ -267,6 +267,22 @@ class TBK_Shortcodes extends Base_Factory {
         
         if(is_front_page()){
             return TBK_Render::shortcode_view( 'portfolio-item', $atts );    
+        }		
+	}
+	
+	function about_section( $atts ) {
+		$atts = shortcode_atts( array(
+			'image' => null,
+			'heading' => null,
+            'copy' => null,            
+		), $atts );
+
+		if( ! empty( $atts['image'] ) ) {
+			$atts['image'] = TBK_Theme::get_attachment_image_url( $atts['image'], 'about-section' );
+		}
+        
+        if(is_front_page()){
+            return TBK_Render::shortcode_view( 'about-section', $atts );    
         }		
 	}
 

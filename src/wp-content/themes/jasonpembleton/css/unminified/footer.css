@@ -12,7 +12,7 @@
 }
 .page-footer .footer-personal-info {
   padding: 60px 0 0 10px;
-  color: #c88c09;
+  color: #959292;
 }
 .page-footer .footer-personal-info .footer-heading {
   font-size: 1.4rem;
@@ -21,12 +21,12 @@
   text-decoration: none;
 }
 .page-footer .footer-personal-info .linkedin-link .icon-linkedin {
-  color: #c88c09;
+  color: #959292;
   font-size: 1.4rem;
   transition: all 0.2s ease-in-out;
 }
 .page-footer .footer-personal-info .linkedin-link .icon-linkedin:hover {
-  color: #f6bd41;
+  color: #c7c6c6;
 }
 .page-footer .footer-personal-info .footer-address {
   display: block;
@@ -37,12 +37,12 @@
 }
 .page-footer .footer-personal-info .footer-tel a {
   font-size: 0.9rem;
-  color: #c88c09;
+  color: #959292;
   transition: all 0.2s ease-in-out;
 }
 .page-footer .footer-personal-info .footer-tel a:hover {
   text-decoration: none;
-  color: #f6bd41;
+  color: #c7c6c6;
 }
 .page-footer .footer-main-menu {
   clear: both;
@@ -56,18 +56,18 @@
   }
 }
 .page-footer .footer-main-menu ul li a {
-  color: #c88c09;
+  color: #959292;
   background-color: #2e2d2d;
   transition: all 0.2s ease-in-out;
   font-size: 1.1rem;
   height: 40px;
 }
 .page-footer .footer-main-menu ul li a:hover {
-  color: #f6bd41;
+  color: #c7c6c6;
 }
 .page-footer .footer-copyright {
   text-align: center;
 }
 .page-footer .footer-copyright a {
-  color: #976a07;
+  color: #959292;
 }
