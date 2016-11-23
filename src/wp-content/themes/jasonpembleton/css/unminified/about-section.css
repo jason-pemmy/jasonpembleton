@@ -17,26 +17,22 @@
 
 // @screen-xxl-min = 1800px
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
-.about-section-container {
+.about-section-skills {
   margin: 5rem 0 3rem 0;
 }
-.about-section-container .about-heading {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-.images-bar {
+.about-section-skills .images-bar {
   text-align: center;
   width: 100%;
   margin-bottom: 3rem;
 }
-.images-bar .images-bar-list {
+.about-section-skills .images-bar .images-bar-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.images-bar .images-bar-list .image-item {
+.about-section-skills .images-bar .images-bar-list .image-item {
   display: inline-block;
 }
-.images-bar .images-bar-list .image-item img {
+.about-section-skills .images-bar .images-bar-list .image-item img {
   width: 125px;
 }
