@@ -46,7 +46,7 @@
 			</div>			
 		</header>
 		<div class="mobile-menu">	
-			<div class="tel-link-container">
+			<div class="contact-link-container">
                 <span class="icon-phone"></span>
                 <?php the_field('telephone_number', 'option'); ?>
             </div>
