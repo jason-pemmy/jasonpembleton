@@ -27,20 +27,37 @@
 	background-color: @jp-green;
 	border-color: @jp-green;
 	
-	.navbar-header {
+	.navbar-headers {
 		.navbar-brand {
-			.logo {
-				width: 13.1rem;	
-				
-				@media @mq-xs-min {
-					width: 14rem;
-				}
-                
-                @media @mq-sm-min {
-					width: 15rem;
-				}
-			}	
-		}		
+            margin-top: 0;
+			font-size: 1.2rem;
+            color: @white;
+            transition: color .3s ease-in-out;
+            cursor: pointer;
+            text-transform: uppercase;
+            &:hover {
+                color: @jp-black;
+            }
+            
+            @media @mq-md-min {
+                margin-top: 10px;
+            }
+		}
+        
+        .job-title {
+            display: block;
+            position: absolute;
+            top: 40px;            
+            float: left;
+            margin-left: 15px;
+            font-size: .75rem;
+            color: @white;
+            
+            @media @mq-md-min {
+                margin-left: 0;
+                top: 45px;
+            }
+        }
 	}
 	
 	.navbar-main {	

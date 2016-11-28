@@ -18,7 +18,7 @@
 		</a>
 		<header class="banner navbar navbar-default navbar-static-top" role="banner">
 			<div class="container">
-				<div class="navbar-header">
+				<div class="navbar-headers">
 					<button type="button" class="navbar-main-primary-toggle" aria-controls="site-canvas-off-left" aria-expanded="false">
 						<div class="navbar-main-primary-toggle-hamburger">
 							<span class="navbar-main-primary-toggle-hamburger-bar"></span>
@@ -27,9 +27,8 @@
 						</div>
 						<span class="btn-text sr-only"><?php _e( 'Menu', 'the-theme' ); ?></span>
 					</button>
-					<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
-						<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name');?>">
-					</a>
+					<a class="navbar-brand" >Jason Pembleton</a>
+                    <div class="job-title">Front-end Developer</div>
 				</div>
 				<nav class="navbar-main" role="navigation">
 					<?php

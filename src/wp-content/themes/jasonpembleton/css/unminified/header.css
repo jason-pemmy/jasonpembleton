@@ -24,17 +24,35 @@
   background-color: #69a96c;
   border-color: #69a96c;
 }
-.navbar-default .navbar-header .navbar-brand .logo {
-  width: 13.1rem;
+.navbar-default .navbar-headers .navbar-brand {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
 }
-@media screen and (min-width: 480px) {
-  .navbar-default .navbar-header .navbar-brand .logo {
-    width: 14rem;
+.navbar-default .navbar-headers .navbar-brand:hover {
+  color: #232222;
+}
+@media screen and (min-width: 992px) {
+  .navbar-default .navbar-headers .navbar-brand {
+    margin-top: 10px;
   }
 }
-@media screen and (min-width: 768px) {
-  .navbar-default .navbar-header .navbar-brand .logo {
-    width: 15rem;
+.navbar-default .navbar-headers .job-title {
+  display: block;
+  position: absolute;
+  top: 40px;
+  float: left;
+  margin-left: 15px;
+  font-size: .75rem;
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .navbar-default .navbar-headers .job-title {
+    margin-left: 0;
+    top: 45px;
   }
 }
 .navbar-default .navbar-main {

@@ -20,6 +20,11 @@
 .about-section-skills {
   margin: 5rem 0 3rem 0;
 }
+@media screen and (min-width: 768px) {
+  .about-section-skills {
+    margin: 5rem 2rem 3rem 3rem;
+  }
+}
 .about-section-skills .images-bar {
   text-align: center;
   width: 100%;

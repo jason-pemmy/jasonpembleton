@@ -44,6 +44,15 @@
   text-decoration: none;
   color: #c7c6c6;
 }
+.page-footer .footer-personal-info .footer-mail a {
+  font-size: 0.8rem;
+  color: #959292;
+  transition: all 0.2s ease-in-out;
+}
+.page-footer .footer-personal-info .footer-mail a:hover {
+  text-decoration: none;
+  color: #c7c6c6;
+}
 .page-footer .footer-main-menu {
   clear: both;
 }

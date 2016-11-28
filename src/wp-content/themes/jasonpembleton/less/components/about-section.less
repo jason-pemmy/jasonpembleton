@@ -21,7 +21,11 @@
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
 
 .about-section-skills {
-	margin: 5rem 0 3rem 0;	
+	margin: 5rem 0 3rem 0;
+    
+    @media @mq-sm-min {
+        margin: 5rem 2rem 3rem 3rem;
+    }
 	
 	.images-bar {    
 		text-align: center;
@@ -42,4 +46,4 @@
 			}
 		}
 	}
-}
+} 

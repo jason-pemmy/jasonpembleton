@@ -11,12 +11,16 @@
 							<img src="<?php echo get_template_directory_uri() ?>/images/footer-image.png" />
 						</div>
 						<div class="footer-personal-info">
-							<span class="footer-heading">Lorem Ipsum</span>
+							<span class="footer-heading">Jason Pembleton</span>
 							<a class="linkedin-link" href="#"/><span class="icon-linkedin"></span></a>
-							<span class="footer-address">271 Lorem Ave. London Ontario, Canada</span>
+							<span class="footer-address">753 Garibaldi Ave. London Ontario, Canada</span>
 							<div class="footer-tel">
 								<span class="icon-phone"></span>
-                				<?php the_field('telephone_number', 'option'); ?>	                				
+                				<?php the_field('telephone_number', 'option'); ?>
+                            </div>
+                            <div class="footer-mail">
+                                <span class="icon-mail4"></span>
+                                <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
 							</div>
 						</div>
 					</div>
