@@ -1,4 +1,4 @@
-<a class="portfolio-item-link" href="<?php echo $url; ?>"/>
+<a class="portfolio-item-link" href="<?php echo $url; ?>" target="_blank"/>
     <div class="portfolio-item-container" style="background-color: <?php echo $bg_color; ?>">
         <div class="item-logo-container">
             <img src="<?php echo $image; ?>" />		

@@ -25,20 +25,6 @@
   height: 350px;
   cursor: pointer;
 }
-.portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container {
-  height: 150px;
-  margin-top: 0;
-}
-.portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container .overlay-content .item-heading {
-  color: #fff;
-}
-.portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container .overlay-content .item-copy,
-.portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container .overlay-content .icon-container {
-  color: #cccccc;
-}
-.portfolio-item-link .portfolio-item-container:hover .item-logo-container img {
-  transform: scale(0.9, 0.9);
-}
 @media screen and (min-width: 768px) {
   .portfolio-item-link .portfolio-item-container {
     float: left;
@@ -49,6 +35,20 @@
   .portfolio-item-link .portfolio-item-container {
     float: left;
     width: 33.33%;
+  }
+  .portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container {
+    height: 150px;
+    margin-top: 0;
+  }
+  .portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container .overlay-content .item-heading {
+    color: #fff;
+  }
+  .portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container .overlay-content .item-copy,
+  .portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container .overlay-content .icon-container {
+    color: #cccccc;
+  }
+  .portfolio-item-link .portfolio-item-container:hover .item-logo-container img {
+    transform: scale(0.9, 0.9);
   }
 }
 .portfolio-item-link .portfolio-item-container .item-logo-container {
@@ -68,14 +68,19 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 0px;
+  height: 150px;
   background-color: rgba(35, 34, 34, 0.85);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 1000;
-  margin-top: 150px;
+}
+@media screen and (min-width: 992px) {
+  .portfolio-item-link .portfolio-item-container .item-detail-overlay-container {
+    margin-top: 150px;
+    height: 0;
+  }
 }
 .portfolio-item-link .portfolio-item-container .item-detail-overlay-container .overlay-content .item-heading {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 20px 0 0 20px;
   color: #999999;
   transition: color 0.6s ease-in-out 0.3s;
