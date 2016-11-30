@@ -34,14 +34,24 @@
             color: @white;
             transition: color .3s ease-in-out;
             cursor: pointer;
-            text-transform: uppercase;
+            text-transform: uppercase;			
+			
             &:hover {
                 color: @jp-black;
             }
             
             @media @mq-md-min {
-                margin-top: 10px;
+                margin-top: -40px;
+				opacity: 0;
+				visibility: hidden;
+				transition: all .4s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             }
+		}
+		
+		.navbar-brand.animate {
+			opacity: 1;
+			visibility: visible;
+			margin-top: 10px;
 		}
         
         .job-title {
@@ -56,8 +66,16 @@
             @media @mq-md-min {
                 margin-left: 0;
                 top: 45px;
+				opacity: 0;
+				visibility: hidden;
+				transition: all .4s 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             }
         }
+		
+		.job-title.animate {
+			opacity: 1;
+			visibility: visible;
+		}
 	}
 	
 	.navbar-main {	
@@ -70,14 +88,20 @@
 		}
         
         .navbar-nav {            
-            li a {
-                transition: all .2s ease-in-out;
-                color: @white;
-                
-                &:hover {
-                    color: @jp-grey;
-                }
-            }
+			li { 
+				@media @mq-md-min {
+					margin-top: -50px;					
+				}
+			
+				a {
+					transition: color .2s ease-in-out;                
+					color: @white;
+
+					&:hover {
+						color: @jp-grey;
+					}				
+				}
+			}
         }
 	}	
 }

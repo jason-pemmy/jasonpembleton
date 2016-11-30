@@ -110,8 +110,8 @@ class Theme_Enqueues extends Base_Factory {
 			// wp_enqueue_script( 'typekit', 'https://use.typekit.net/insertURLhere.js', false, false, false );
 			wp_enqueue_script( 'jquery' );			
 			wp_enqueue_script( 'modernizr' , $js_directory . 'vendor/modernizr.js');
-
-
+			wp_enqueue_script( 'waypoints' , $js_directory . 'vendor/jquery.waypoints.min.js');
+			
 			// all pages - our stuff
 			wp_enqueue_script( 'main-scripts', $js_directory . 'scripts.js', array( 'jquery'), false, true );
 			//wp_enqueue_script( 'navigation', $js_directory . 'navigation.js', array( 'jquery' ), false, true );

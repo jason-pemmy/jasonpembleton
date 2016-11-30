@@ -35,12 +35,25 @@
 			padding-top: 9rem;
 		}
 		
-		.hero-heading {
-			font-size: 1.8rem;
+		.hero-heading {			
+			font-size: 1.8rem;						
 			
 			@media @mq-sm-min {
 				font-size: 2rem;
 			}
+			
+			@media @mq-md-min {
+				opacity: 0;
+				visibility: hidden;
+				transition: all 1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);			
+				transform: scale(.5,.5);
+			}
+		}
+		
+		.hero-heading.animate {
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1,1);
 		}
 		
 		.hero-copy {
@@ -50,12 +63,31 @@
 			@media @mq-sm-min {
 				font-size: 1.3rem;
 			}
+			
+			@media @mq-md-min {
+				opacity: 0;
+				visibility: hidden;
+				transition: all 1s 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);			
+				transform: scale(.5,.5);
+			}
+		}
+		
+		.hero-copy.animate {
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1,1);
 		}
         
         .arrow-container {
             animation-name: bounce;
             animation-duration: 4s;
             animation-iteration-count: infinite;
+			
+			@media @mq-md-min {
+				opacity: 0;
+				visibility: hidden;
+				transition: all 1s 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			}
 			
             .icon-arrow-down2 {
                 position: relative;
@@ -72,5 +104,10 @@
                 }
             }    
         }
+		
+		.arrow-container.animate {
+			opacity: 1;
+			visibility: visible;
+		}		
 	}
 }
