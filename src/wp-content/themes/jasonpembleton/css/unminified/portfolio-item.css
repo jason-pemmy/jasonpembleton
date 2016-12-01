@@ -35,8 +35,6 @@
   .portfolio-item-link .portfolio-item-container {
     float: left;
     width: 33.33%;
-    margin-top: 20px;
-    opacity: 0;
   }
   .portfolio-item-link .portfolio-item-container:hover .item-detail-overlay-container {
     height: 150px;
@@ -58,6 +56,7 @@
   height: 200px;
   margin: 0 auto;
   padding-top: 75px;
+  opacity: 0;
 }
 .portfolio-item-link .portfolio-item-container .item-logo-container img {
   position: relative;
@@ -117,9 +116,4 @@
   .portfolio-item-link .portfolio-item-container .item-detail-overlay-container .overlay-content .item-copy {
     font-size: .8rem;
   }
-}
-.portfolio-item-link .portfolio-item-container.animate {
-  margin-top: 0;
-  opacity: 1;
-  visibility: visible;
 }

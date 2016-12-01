@@ -39,9 +39,6 @@
         @media @mq-md-min {
             float: left;
             width: 33.33%;
-            margin-top: 20px;
-            opacity: 0;
-            //visibility: hidden;
             
             &:hover {
                 .item-detail-overlay-container {
@@ -68,7 +65,8 @@
             width: 200px;
             height: 200px;
             margin: 0 auto;
-            padding-top: 75px;            
+            padding-top: 75px;
+			opacity: 0;			
 
             img {
                 position: relative;
@@ -118,6 +116,7 @@
 						font-size: 1rem;
 					}
 				}
+				
 				.item-copy {
 					clear: both;
 					font-size: 1rem;
@@ -130,10 +129,5 @@
 				}	
 			}
         }
-    }
-    .portfolio-item-container.animate {
-        margin-top: 0;   
-        opacity: 1;
-        visibility: visible;
     }
 }
