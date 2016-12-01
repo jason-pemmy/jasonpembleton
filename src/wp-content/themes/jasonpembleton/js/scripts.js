@@ -2,21 +2,16 @@ jQuery(function ($){
 	var mobileMenu = $(".navbar-main-primary-toggle");
 	var root = $("html");
     var body = $("body");
-	
+	var homeAnimated = false;
+    
 	$(document).on("ready", function(){
 		if (Modernizr.mq('(min-width: 992px)')) {
 			animateHome();	
 		}
 		
-		/*var waypoints = $('#recent-projects').waypoint({
-			handler: function(direction) {
-				console.log("hit");				
-			}
-		},{offset:"50%"});		*/
-		
 		var waypoints = $('#recent-projects').waypoint({			
 			handler: function(direction) {
-				console.log('400px from top');
+				animatePortfolioItems();
 		  	},
 		  	offset: 400
 		});
@@ -33,6 +28,7 @@ jQuery(function ($){
 				root.removeClass("mobile-menu-open");
                 body.removeClass("disable-scrolling");
 			}
+            if(!homeAnimated){animateHome();}            
 		}
 	});	
 	
@@ -50,11 +46,23 @@ jQuery(function ($){
 		
 		links.each(function(){			
 			$(this).delay(delay).animate({marginTop: 0},400);	
-			delay += 300;
+			delay += 200;
 		});		
 		
 		heroHeading.addClass("animate");
 		heroCopy.addClass("animate");
 		arrowContainer.addClass("animate");
+        homeAnimated = true;
 	}
+    
+    function animatePortfolioItems() {
+        var itemContainer = $(".portfolio-item-container"),
+            delay = 0;
+        
+        itemContainer.each(function(){			
+			$(this).delay(delay).animate({marginTop: 0, opacity: 1},600);	
+			delay += 200;
+		});
+        
+    }
 });
