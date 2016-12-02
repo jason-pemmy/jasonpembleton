@@ -15,7 +15,6 @@ body {
   }
 }
 a:not([class]) {
-  color: #87c54e;
   text-decoration: none;
 }
 a:not([class]):hover,
@@ -91,7 +90,6 @@ h5 {
   font-weight: 600;
   font-size: 1.500em;
   line-height: 1;
-  text-transform: uppercase;
   letter-spacing: -0.025em;
   color: #000;
 }

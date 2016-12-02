@@ -37,8 +37,7 @@
     margin-top: -40px;
     opacity: 0;
     visibility: hidden;
-    transition: margin-top 0.4s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: color 0.3s ease-in-out;
+    transition: margin-top 0.4s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease-in-out;
   }
 }
 .navbar-default .navbar-headers .navbar-brand:hover {

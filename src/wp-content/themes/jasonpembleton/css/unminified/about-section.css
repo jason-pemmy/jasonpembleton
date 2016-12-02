@@ -41,3 +41,6 @@
 .about-section-skills .images-bar .images-bar-list .image-item img {
   width: 125px;
 }
+.about-section-skills h5 {
+  text-align: center;
+}
