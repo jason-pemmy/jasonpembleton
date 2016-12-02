@@ -66,13 +66,3 @@ jQuery(function ($){
         
     }
 });
-
-/*
-Hi. I'm Jason.
-
-A front-end developer, designer and fine artist based out of London, Ontario. I am currently a dedicated member of 3M Canada's web team responsible for design, development and strategy.
-
-I have several years commercial experience working with clients from around the world providing responsive front-end development and WordPress integrations.
-
-I develop fast interactive front ends, using the latest technologies and techniques to reduce page load time. I use my knowledge and tools to speed up my development process, including pre-processors, task runners and version control.
-*/

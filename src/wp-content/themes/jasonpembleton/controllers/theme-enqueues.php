@@ -111,6 +111,7 @@ class Theme_Enqueues extends Base_Factory {
 			wp_enqueue_script( 'jquery' );			
 			wp_enqueue_script( 'modernizr' , $js_directory . 'vendor/modernizr.js');
 			wp_enqueue_script( 'waypoints' , $js_directory . 'vendor/jquery.waypoints.min.js');
+			wp_enqueue_script( 'tweenmax' , $js_directory . 'vendor/TweenMax.min.js');	 		
 			
 			// all pages - our stuff
 			wp_enqueue_script( 'main-scripts', $js_directory . 'scripts.js', array( 'jquery'), false, true );
