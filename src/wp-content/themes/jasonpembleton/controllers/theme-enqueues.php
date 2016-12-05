@@ -70,6 +70,7 @@ class Theme_Enqueues extends Base_Factory {
                     'portfolio-container',
                     'portfolio-item',
 					'about-section',
+					'contact-section',
 				) );
 
 				// pages

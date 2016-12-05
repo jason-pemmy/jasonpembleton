@@ -94,17 +94,17 @@
 }
 .hero-banner-container .hero-banner-text .arrow-container .icon-arrow-down2 {
   position: relative;
-  top: 7rem;
+  top: 4rem;
   font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
   .hero-banner-container .hero-banner-text .arrow-container .icon-arrow-down2 {
-    top: 10rem;
+    top: 6rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-banner-container .hero-banner-text .arrow-container .icon-arrow-down2 {
-    top: 6rem;
+    top: 3rem;
     font-size: 1.8rem;
   }
 }

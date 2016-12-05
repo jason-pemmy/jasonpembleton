@@ -159,6 +159,32 @@ class TBK_Shortcodes extends Base_Factory {
 				),
 			),
 		) );
+		
+		$this->register( 'contact-section', array(
+			'show_settings_on_create' => true,
+			'params' => array(
+                array(					
+					'heading' => 'Heading',
+					'param_name' => 'heading',
+                    'type' => 'textfield',
+				),
+                array(					
+					'heading' => 'Email',
+					'param_name' => 'email',
+                    'type' => 'textfield',
+				),
+				array(					
+					'heading' => 'Telephone',
+					'param_name' => 'telephone',
+                    'type' => 'textfield',
+				),
+				array(					
+					'heading' => 'Linkedin',
+					'param_name' => 'linkedin',
+                    'type' => 'textfield',
+				),
+			),
+		) );
         
         $this->register( 'portfolio-container', array(
 			'name' => 'Portfolio Container',
@@ -283,6 +309,19 @@ class TBK_Shortcodes extends Base_Factory {
         
         if(is_front_page()){
             return TBK_Render::shortcode_view( 'about-section', $atts );    
+        }		
+	}
+	
+	function contact_section( $atts ) {
+		$atts = shortcode_atts( array(			
+			'heading' => null,
+            'telephone' => null,
+			'linkedin' => null,
+			'email' => null,
+		), $atts );
+		
+        if(is_front_page()){
+            return TBK_Render::shortcode_view( 'contact-section', $atts );    
         }		
 	}
 
