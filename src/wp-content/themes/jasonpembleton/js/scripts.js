@@ -38,20 +38,31 @@ jQuery(function ($){
 			links = $(".navbar-nav li"),
 			heroHeading = $(".hero-heading"),
 			heroCopy = $(".hero-copy"),
+            heroCopyStr = $(".hero-copy").text(),
+            heroCopyAry = [],
+            heroCopyAryMarkup = [],
+            copyAryMarkup = $(".hero-copy-ary"),
 			arrowContainer = $(".arrow-container"),
-			delay = 1000;		
-		
-		name.addClass("animate");
-		jobTitle.addClass("animate");
-		
-		links.each(function(){			
-			$(this).delay(delay).animate({marginTop: 0},400);	
-			delay += 200;
-		});		
-		
-		heroHeading.addClass("animate");
-		heroCopy.addClass("animate");
-		arrowContainer.addClass("animate");
+			delay = 1000,
+            tl = new TimelineMax();
+        
+        heroCopyAry = heroCopyStr.split(" ");
+        
+        for(var i = 0; i < heroCopyAry.length; i++){
+            var tt = "";
+            tt+= "<div class='hero-copy-ary-item'>"+heroCopyAry[i]+"</div>";
+            heroCopyAryMarkup.push(tt);
+        }
+        
+        copyAryMarkup.html(heroCopyAryMarkup);        
+            
+        tl.add( TweenLite.to(name, .8, {marginTop: 10,opacity: 1,ease: Back.easeInOut}) )
+            .to(jobTitle, 2, {opacity: 1,ease: Back.easeInOut},"-=.5" )
+            .staggerTo(links, .4, {marginTop: 0, ease: Back.easeInOut},.2,"-=1.8")
+            .fromTo(heroHeading, 1, {scaleX: 0, scaleY: 0, opacity: 0},{scaleX: 1, scaleY: 1, opacity: 1, ease: Back.easeInOut}, "-=1.8")
+            .staggerFromTo($(".hero-copy-ary div"), .75, {opacity: 0, top:80, rotation: 180},{opacity: 1, top:10, rotation:0, ease: Back.easeInOut},.15,"-=1.8")
+            .to(arrowContainer, 3, {opacity: 1}, "-=1");
+        
         homeAnimated = true;
 	}
     
@@ -62,7 +73,6 @@ jQuery(function ($){
         itemContainer.each(function(){			
 			$(this).delay(delay).animate({opacity: 1},600);	
 			delay += 200;
-		});
-        
+		});        
     }
 });

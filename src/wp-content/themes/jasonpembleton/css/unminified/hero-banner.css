@@ -44,15 +44,7 @@
 @media screen and (min-width: 992px) {
   .hero-banner-container .hero-banner-text .hero-heading {
     opacity: 0;
-    visibility: hidden;
-    transition: all 1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform: scale(0.5, 0.5);
   }
-}
-.hero-banner-container .hero-banner-text .hero-heading.animate {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1, 1);
 }
 .hero-banner-container .hero-banner-text .hero-copy {
   margin-top: 1rem;
@@ -65,16 +57,30 @@
 }
 @media screen and (min-width: 992px) {
   .hero-banner-container .hero-banner-text .hero-copy {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 1s 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform: scale(0.5, 0.5);
+    display: none;
   }
 }
-.hero-banner-container .hero-banner-text .hero-copy.animate {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1, 1);
+.hero-banner-container .hero-banner-text .hero-copy-ary-item {
+  display: none;
+  position: relative;
+  top: 10px;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .hero-banner-container .hero-banner-text .hero-copy-ary-item {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-banner-container .hero-banner-text .hero-copy-ary-item {
+    display: inline-block;
+    opacity: 0;
+    top: 180px;
+    margin-left: 10px;
+  }
+  .hero-banner-container .hero-banner-text .hero-copy-ary-item:nth-last-child {
+    margin-left: 0;
+  }
 }
 .hero-banner-container .hero-banner-text .arrow-container {
   animation-name: bounce;
@@ -84,8 +90,6 @@
 @media screen and (min-width: 992px) {
   .hero-banner-container .hero-banner-text .arrow-container {
     opacity: 0;
-    visibility: hidden;
-    transition: all 5s 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 }
 .hero-banner-container .hero-banner-text .arrow-container .icon-arrow-down2 {
@@ -103,8 +107,4 @@
     top: 6rem;
     font-size: 1.8rem;
   }
-}
-.hero-banner-container .hero-banner-text .arrow-container.animate {
-  opacity: 1;
-  visibility: visible;
 }

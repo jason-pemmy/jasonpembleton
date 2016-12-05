@@ -36,17 +36,10 @@
   .navbar-default .navbar-headers .navbar-brand {
     margin-top: -40px;
     opacity: 0;
-    visibility: hidden;
-    transition: margin-top 0.4s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease-in-out;
   }
 }
 .navbar-default .navbar-headers .navbar-brand:hover {
   color: #232222;
-}
-.navbar-default .navbar-headers .navbar-brand.animate {
-  opacity: 1;
-  visibility: visible;
-  margin-top: 10px;
 }
 .navbar-default .navbar-headers .job-title {
   display: block;
@@ -62,13 +55,7 @@
     margin-left: 0;
     top: 45px;
     opacity: 0;
-    visibility: hidden;
-    transition: all 1s 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-}
-.navbar-default .navbar-headers .job-title.animate {
-  opacity: 1;
-  visibility: visible;
 }
 .navbar-default .navbar-main {
   display: none;
