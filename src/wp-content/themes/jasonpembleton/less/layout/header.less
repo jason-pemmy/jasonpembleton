@@ -72,11 +72,15 @@
 			display: block !important;
 		}
         
-        .navbar-nav {            
+        .navbar-nav {
+			.active a{
+				background-color: @jp-green;
+			}
+			
 			li { 
 				@media @mq-md-min {
 					margin-top: -50px;					
-				}
+				}			
 			
 				a {
 					transition: color .2s ease-in-out;                
@@ -84,9 +88,22 @@
 
 					&:hover {
 						color: @jp-grey;
-					}				
+					}
 				}
 			}
+			
+			.menu-item-has-children ul{
+				display: block;
+				opacity: 0;
+				visibility: hidden;
+				transition: all .5 ease-in-out;
+			}
+			
+			.menu-item-has-children ul.active {
+				opacity: 1;
+				visibility: visible;	
+			}
+			
         }
 	}	
 }

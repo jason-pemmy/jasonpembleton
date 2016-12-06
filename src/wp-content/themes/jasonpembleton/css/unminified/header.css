@@ -67,6 +67,9 @@
     display: block !important;
   }
 }
+.navbar-default .navbar-main .navbar-nav .active a {
+  background-color: #69a96c;
+}
 @media screen and (min-width: 992px) {
   .navbar-default .navbar-main .navbar-nav li {
     margin-top: -50px;
@@ -78,4 +81,14 @@
 }
 .navbar-default .navbar-main .navbar-nav li a:hover {
   color: #2e2d2d;
+}
+.navbar-default .navbar-main .navbar-nav .menu-item-has-children ul {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5 ease-in-out;
+}
+.navbar-default .navbar-main .navbar-nav .menu-item-has-children ul.active {
+  opacity: 1;
+  visibility: visible;
 }

@@ -19,7 +19,7 @@
 		<header class="banner navbar navbar-default navbar-static-top" role="banner">
 			<div class="container">
 				<div class="navbar-headers">
-					<button type="button" class="navbar-main-primary-toggle" aria-controls="site-canvas-off-left" aria-expanded="false">
+					<button type="button" class="navbar-toggle navbar-main-primary-toggle" aria-controls="site-canvas-off-left" aria-expanded="false">
 						<div class="navbar-main-primary-toggle-hamburger">
 							<span class="navbar-main-primary-toggle-hamburger-bar"></span>
 							<span class="navbar-main-primary-toggle-hamburger-bar"></span>
@@ -32,14 +32,14 @@
 				</div>
 				<nav class="navbar-main" role="navigation">
 					<?php
-					wp_nav_menu( array(
-						'container' => false,
-						'menu' => 'Main Navigation',
-						'menu_class' => 'nav navbar-nav',
-						'link_before' => '<span class="menu-item-text">',
-						'link_after' => '</span>',
-						'walker' => new wp_bootstrap_navwalker(),
-					));
+						wp_nav_menu( array(
+							'container' => false,
+							'menu' => 'MainMenu',
+							'menu_class' => 'nav navbar-nav',
+							'link_before' => '<span class="menu-item-text">',
+							'link_after' => '</span>',
+							'walker' => new wp_bootstrap_navwalker(),						
+						));
 					?>
 				</nav>				
 			</div>			
@@ -53,11 +53,11 @@
 				<?php
 					wp_nav_menu( array(
 						'container' => false,
-						'menu' => 'Main Navigation',
+						'menu' => 'MainMenu',
 						'menu_class' => 'nav navbar-nav',
 						'link_before' => '<span class="menu-item-text">',
 						'link_after' => '</span>',
-						'walker' => new wp_bootstrap_navwalker(),
+						'walker' => new wp_bootstrap_navwalker(),						
 					));
 				?>
 			</div>
