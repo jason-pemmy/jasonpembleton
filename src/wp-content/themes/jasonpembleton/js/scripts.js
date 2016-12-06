@@ -61,7 +61,7 @@ jQuery(function ($){
             .staggerTo(links, .4, {marginTop: 0, ease: Back.easeInOut},.2,"-=1.8")
             .fromTo(heroHeading, 1, {scaleX: 0, scaleY: 0, opacity: 0},{scaleX: 1, scaleY: 1, opacity: 1, ease: Back.easeInOut}, "-=1.8")
             .staggerFromTo($(".hero-copy-ary div"), .75, {opacity: 0, top:80, rotation: 180},{opacity: 1, top:10, rotation:0, ease: Back.easeInOut},.15,"-=1.8")
-            .to(arrowContainer, 3, {opacity: 1}, "-=1");
+            .to(arrowContainer, 3, {opacity: 1});
         
         homeAnimated = true;
 	}

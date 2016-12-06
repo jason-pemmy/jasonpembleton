@@ -38,7 +38,7 @@
 						'menu_class' => 'nav navbar-nav',
 						'link_before' => '<span class="menu-item-text">',
 						'link_after' => '</span>',
-						'walker' => new TBK_Nav_Walker(),
+						'walker' => new wp_bootstrap_navwalker(),
 					));
 					?>
 				</nav>				
@@ -57,7 +57,7 @@
 						'menu_class' => 'nav navbar-nav',
 						'link_before' => '<span class="menu-item-text">',
 						'link_after' => '</span>',
-						'walker' => new TBK_Nav_Walker(),
+						'walker' => new wp_bootstrap_navwalker(),
 					));
 				?>
 			</div>
