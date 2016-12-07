@@ -57,13 +57,14 @@
 	
 	.mobile-menu-inner {
 		position: relative;
-		background-color: lighten(@jp-blue,5%);		
-		
+		background-color: lighten(@jp-blue,5%);				
+        
         ul {
             margin-top: 0;
             
             li a{
                 transition: background-color .2s ease-in-out;
+                color: @white;
                 border-bottom-style: solid;
 				border-bottom-width: 1px;
 				border-bottom-color: lighten(@jp-blue,10%);
@@ -73,12 +74,40 @@
             }    
         }
         
+        .menu-item-has-children ul{
+            display: block;
+            opacity: 0;
+            width: 100%;        
+            visibility: hidden;
+            padding: 0;
+            margin-left: 0;
+            padding-left: 20px;
+            box-shadow: none;
+            background-color: darken(@jp-blue, 10%);
+            border: none;
+            font-size: .8rem;
+            transition: all .3s ease-in-out;
+
+            li {
+                color: @white;  
+                a  span {
+                    font-size: 1.3rem;
+                    color: darken(@white, 20%);
+                }
+            }
+        }
+
+        .menu-item-has-children ul.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
 		.menu-item-text {
 			color: #000;
 			font-size: 1.5rem;
 			padding-left: 20px;			
 		}
-	}
+	}    
 	
 	.mobile-menu-bottom-container {
 		position: inherit;

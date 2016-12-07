@@ -18,7 +18,7 @@ jQuery(function ($){
 		
 		$('.navbar-nav').find('a').on('click', function(e){			
 			if($(this).parent().hasClass("menu-item-has-children")){
-				$(this +" ul").toggleClass("active");
+				$(".dropdown-menu").toggleClass("active");
 			}        
 		});
 	});
@@ -62,10 +62,10 @@ jQuery(function ($){
         
 		copyAryMarkup.html(heroCopyAryMarkup);
 		 tl.add( TweenLite.to(name, 0.8, {marginTop: 10,opacity: 1,ease: Back.easeInOut}) )
-            .to(jobTitle, 2, {opacity: 1,ease: Back.easeInOut},"-= .5" )
-            .staggerTo(links, 0.4, {marginTop: 0, ease: Back.easeInOut}, 0.2,"-= 1.8")
-            .fromTo(heroHeading, 1, {scaleX: 0, scaleY: 0, opacity: 0},{scaleX: 1, scaleY: 1, opacity: 1, ease: Back.easeInOut}, "-=1.8")
-            .staggerFromTo($(".hero-copy-ary div"), 0.75, {opacity: 0, top:80, rotation: 180},{opacity: 1, top:10, rotation:0, ease: Back.easeInOut},0.15,"-=1.8")
+            .to(jobTitle, 2, {opacity: 1,ease: Back.easeInOut},"-=.5" )
+            .staggerTo(links, 0.4, {marginTop: 0, ease: Back.easeInOut}, 0.2,"-=1.8")
+            .fromTo(heroHeading, 1, {scaleX: 0, scaleY: 0, opacity: 0},{scaleX: 1, scaleY: 1, opacity: 1, ease: Back.easeInOut}, "-=3")
+            .staggerFromTo($(".hero-copy-ary div"), 0.75, {opacity: 0, top:80, rotation: 180},{opacity: 1, top:10, rotation:0, ease: Back.easeInOut},0.15,"-=2.5")
             .to(arrowContainer, 3, {opacity: 1});
 		
         

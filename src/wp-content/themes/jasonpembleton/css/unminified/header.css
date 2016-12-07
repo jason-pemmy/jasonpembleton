@@ -85,10 +85,16 @@
 .navbar-default .navbar-main .navbar-nav .menu-item-has-children ul {
   display: block;
   opacity: 0;
+  margin-top: -20px;
   visibility: hidden;
-  transition: all 0.5 ease-in-out;
+  box-shadow: none;
+  background-color: #69a96c;
+  border: none;
+  font-size: .8rem;
+  transition: all 0.3s ease-in-out;
 }
 .navbar-default .navbar-main .navbar-nav .menu-item-has-children ul.active {
   opacity: 1;
   visibility: visible;
+  margin-top: 0;
 }

@@ -53,12 +53,38 @@
 }
 .mobile-menu .mobile-menu-inner ul li a {
   transition: background-color 0.2s ease-in-out;
+  color: #fff;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #0086d7;
 }
 .mobile-menu .mobile-menu-inner ul li a:hover {
   background-color: #fff;
+}
+.mobile-menu .mobile-menu-inner .menu-item-has-children ul {
+  display: block;
+  opacity: 0;
+  width: 100%;
+  visibility: hidden;
+  padding: 0;
+  margin-left: 0;
+  padding-left: 20px;
+  box-shadow: none;
+  background-color: #004671;
+  border: none;
+  font-size: .8rem;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-menu .mobile-menu-inner .menu-item-has-children ul li {
+  color: #fff;
+}
+.mobile-menu .mobile-menu-inner .menu-item-has-children ul li a span {
+  font-size: 1.3rem;
+  color: #cccccc;
+}
+.mobile-menu .mobile-menu-inner .menu-item-has-children ul.active {
+  opacity: 1;
+  visibility: visible;
 }
 .mobile-menu .mobile-menu-inner .menu-item-text {
   color: #000;

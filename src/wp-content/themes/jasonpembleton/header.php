@@ -19,7 +19,7 @@
 		<header class="banner navbar navbar-default navbar-static-top" role="banner">
 			<div class="container">
 				<div class="navbar-headers">
-					<button type="button" class="navbar-toggle navbar-main-primary-toggle" aria-controls="site-canvas-off-left" aria-expanded="false">
+					<button type="button" class="navbar-main-primary-toggle" aria-controls="site-canvas-off-left" aria-expanded="false">
 						<div class="navbar-main-primary-toggle-hamburger">
 							<span class="navbar-main-primary-toggle-hamburger-bar"></span>
 							<span class="navbar-main-primary-toggle-hamburger-bar"></span>
