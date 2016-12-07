@@ -62,7 +62,21 @@
 				?>
 			</div>
 			<div class="mobile-menu-bottom-container">
-				
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="mobile-menu-personal-info">
+								<span class="mobile-menu-heading">Jason Pembleton</span>
+								<a class="linkedin-link" href="#"/><span class="icon-linkedin"></span></a>
+								<span class="mobile-menu-address">753 Garibaldi Ave. London Ontario, Canada</span>
+								<div class="mobile-menu-mail">
+									<span class="icon-mail4"></span>
+									<a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>				
 			</div>
 			
 			<div class="mobile-menu-close-container">

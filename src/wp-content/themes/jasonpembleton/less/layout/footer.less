@@ -44,7 +44,7 @@
 		}
 		
 		.footer-tel {
-			margin-top: 5px;
+			margin-top: 12px;
 			
 			a {
 				font-size: 0.9rem;
@@ -73,15 +73,56 @@
 	}
 	
 	.footer-main-menu {
-		clear: both;       
+		clear: both;  
+		margin-bottom: 20px;
+		
+		.col-title {
+			margin-top: 20px;
+			color: lighten(@jp-grey, 60%);
+			text-decoration: underline;
+			
+			@media @mq-sm-min{
+			   margin-top: 50px;
+			}
+		}
+        
+		ul{
+			margin-bottom: 20px;
+			li {			
+				a {
+					color: lighten(@jp-grey, 40%);
+					background-color: @jp-grey;
+					transition: all .2s ease-in-out;
+					font-size: 1.1rem;
+					height: 40px;
+					&:hover {
+						color: lighten(@jp-grey, 60%);
+					}
+				}
+			}
+		}
+	}
+	
+	.footer-secondary-menu {
+		clear: both;		
+		
+		.col-title {
+			margin-top: 20px;
+			color: lighten(@jp-grey, 60%);
+			text-decoration: underline;
+			
+			@media @mq-sm-min{
+			   margin-top: 50px;
+			}
+		}
         
 		ul li {            
-			&:first-child {
+			/*&:first-child {
 				margin-top: 20px;
                 @media @mq-sm-min{
                    margin-top: 50px;
                 }	
-			}
+			}*/
 			
 			a {
 				color: lighten(@jp-grey, 40%);

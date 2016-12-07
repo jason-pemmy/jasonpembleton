@@ -6,7 +6,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">   
+					<div class="col-xs-12 col-sm-6">   
 						<div class="footer-image-container">
 							<img src="<?php echo get_template_directory_uri() ?>/images/footer-image.png" />
 						</div>
@@ -24,8 +24,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-xs-6 col-sm-3">
 						<div class="footer-main-menu">
+							<div class="col-title">Main Menu</div>
 							<?php
 								wp_nav_menu( array(
 									'container' => false,
@@ -34,6 +35,20 @@
 									'link_before' => '<span class="menu-item-text">',
 									'link_after' => '</span>',
 									'walker' => new TBK_Nav_Walker(),
+								));
+							?>
+						</div>	
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="footer-secondary-menu">
+							<div class="col-title">Drawings</div>
+							<?php
+								wp_nav_menu( array(
+									'container' => false,
+									'menu' => 'FooterDrawingMenu',
+									'menu_class' => 'nav navbar-nav-footer',
+									'link_before' => '<span class="menu-item-text">',
+									'link_after' => '</span>',
 								));
 							?>
 						</div>

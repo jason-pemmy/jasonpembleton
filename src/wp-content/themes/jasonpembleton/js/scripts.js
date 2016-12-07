@@ -3,6 +3,7 @@ jQuery(function ($){
 	var root = $("html");
     var body = $("body");
 	var homeAnimated = false;
+	var dropdownMenu = $(".dropdown-menu");
     
 	$(document).on("ready", function(){
 		if (Modernizr.mq('(min-width: 992px)')) {
@@ -18,7 +19,7 @@ jQuery(function ($){
 		
 		$('.navbar-nav').find('a').on('click', function(e){			
 			if($(this).parent().hasClass("menu-item-has-children")){
-				$(".dropdown-menu").toggleClass("active");
+				dropdownMenu.toggleClass("active");
 			}        
 		});
 	});
@@ -29,6 +30,7 @@ jQuery(function ($){
 	});
 	
 	$(window).resize(function() {
+		dropdownMenu.removeClass("active");
 		if (Modernizr.mq('(min-width: 992px)')) {
 			if(root.hasClass("mobile-menu-open")){
 				root.removeClass("mobile-menu-open");

@@ -53,12 +53,13 @@
 }
 .mobile-menu .mobile-menu-inner ul li a {
   transition: background-color 0.2s ease-in-out;
-  color: #fff;
+  color: #f6bd41;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #0086d7;
 }
 .mobile-menu .mobile-menu-inner ul li a:hover {
+  color: #232222;
   background-color: #fff;
 }
 .mobile-menu .mobile-menu-inner .menu-item-has-children ul {
@@ -78,8 +79,14 @@
 .mobile-menu .mobile-menu-inner .menu-item-has-children ul li {
   color: #fff;
 }
+.mobile-menu .mobile-menu-inner .menu-item-has-children ul li a:hover {
+  background-color: #f6bd41;
+}
+.mobile-menu .mobile-menu-inner .menu-item-has-children ul li a:hover span {
+  color: #232222;
+}
 .mobile-menu .mobile-menu-inner .menu-item-has-children ul li a span {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #cccccc;
 }
 .mobile-menu .mobile-menu-inner .menu-item-has-children ul.active {
@@ -92,9 +99,27 @@
   padding-left: 20px;
 }
 .mobile-menu .mobile-menu-bottom-container {
-  position: inherit;
-  bottom: 0;
   width: 100%;
-  height: 5rem;
+  height: 100%;
+  margin-top: 100px;
   background-color: #2e2d2d;
+}
+.mobile-menu .mobile-menu-bottom-container .mobile-menu-personal-info {
+  margin-top: 30px;
+  text-align: center;
+  color: #959292;
+}
+.mobile-menu .mobile-menu-bottom-container .mobile-menu-personal-info a:hover {
+  text-decoration: none;
+  color: #0ba3ff;
+}
+.mobile-menu .mobile-menu-bottom-container .mobile-menu-personal-info .mobile-menu-address {
+  display: block;
+}
+.mobile-menu .mobile-menu-bottom-container .mobile-menu-personal-info .mobile-menu-mail {
+  color: #0066a4;
+}
+.mobile-menu .mobile-menu-bottom-container .mobile-menu-personal-info .mobile-menu-mail a:hover {
+  text-decoration: none;
+  color: #0ba3ff;
 }

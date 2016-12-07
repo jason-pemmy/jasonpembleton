@@ -33,7 +33,7 @@
   font-size: 0.9rem;
 }
 .page-footer .footer-personal-info .footer-tel {
-  margin-top: 5px;
+  margin-top: 12px;
 }
 .page-footer .footer-personal-info .footer-tel a {
   font-size: 0.9rem;
@@ -55,14 +55,20 @@
 }
 .page-footer .footer-main-menu {
   clear: both;
+  margin-bottom: 20px;
 }
-.page-footer .footer-main-menu ul li:first-child {
+.page-footer .footer-main-menu .col-title {
   margin-top: 20px;
+  color: #c7c6c6;
+  text-decoration: underline;
 }
 @media screen and (min-width: 768px) {
-  .page-footer .footer-main-menu ul li:first-child {
+  .page-footer .footer-main-menu .col-title {
     margin-top: 50px;
   }
+}
+.page-footer .footer-main-menu ul {
+  margin-bottom: 20px;
 }
 .page-footer .footer-main-menu ul li a {
   color: #959292;
@@ -72,6 +78,37 @@
   height: 40px;
 }
 .page-footer .footer-main-menu ul li a:hover {
+  color: #c7c6c6;
+}
+.page-footer .footer-secondary-menu {
+  clear: both;
+}
+.page-footer .footer-secondary-menu .col-title {
+  margin-top: 20px;
+  color: #c7c6c6;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .page-footer .footer-secondary-menu .col-title {
+    margin-top: 50px;
+  }
+}
+.page-footer .footer-secondary-menu ul li {
+  /*&:first-child {
+				margin-top: 20px;
+                @media @mq-sm-min{
+                   margin-top: 50px;
+                }	
+			}*/
+}
+.page-footer .footer-secondary-menu ul li a {
+  color: #959292;
+  background-color: #2e2d2d;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.1rem;
+  height: 40px;
+}
+.page-footer .footer-secondary-menu ul li a:hover {
   color: #c7c6c6;
 }
 .page-footer .footer-copyright {
