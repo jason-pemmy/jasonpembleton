@@ -17,3 +17,30 @@
 
 // @screen-xxl-min = 1800px
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
+.contact-section-container {
+  background-color: #0066a4;
+}
+.contact-section-container .contact-heading {
+  padding-top: 50px;
+  text-align: center;
+}
+.contact-section-container .contact-heading h5 {
+  color: #fff;
+}
+.contact-section-container .form-wrapper {
+  margin-bottom: 20px;
+  background-color: #0069a9;
+}
+.contact-section-container .form-wrapper form {
+  padding: 1rem;
+  background-color: #0069a9;
+}
+.contact-section-container .gform_body {
+  width: 100% !important;
+}
+.contact-section-container .gform_body ul li input {
+  width: 100% !important;
+}
+.contact-section-container .gform_body .ginput_container::after {
+  color: #ff9999;
+}

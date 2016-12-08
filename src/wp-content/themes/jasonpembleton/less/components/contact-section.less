@@ -21,5 +21,35 @@
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
 
 .contact-section-container {
-	
-}
+    background-color: @jp-blue;
+    .contact-heading {
+        padding-top: 50px;
+        text-align: center;
+        h5 {
+            color: @white;
+        }
+    }
+    
+    .contact-info {
+        
+    }
+    
+    .form-wrapper {
+        margin-bottom: 20px;
+        background-color: lighten(@jp-blue, 1%);
+        form {            
+            padding: 1rem;
+            background-color: lighten(@jp-blue, 1%);
+        }
+    }
+    
+    .gform_body {
+        width: 100% !important;
+        ul li input{
+            width: 100% !important;
+        }
+        .ginput_container::after {
+            color: lighten(@red, 30%);    
+        }
+    }
+} 
