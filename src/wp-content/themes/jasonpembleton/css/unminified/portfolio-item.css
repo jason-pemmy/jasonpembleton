@@ -69,7 +69,8 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 150px;
+  height: 100px;
+  margin-top: 50px;
   background-color: rgba(35, 34, 34, 0.85);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 1000;
@@ -82,25 +83,30 @@
 }
 .portfolio-item-link .portfolio-item-container .item-detail-overlay-container .overlay-content .item-heading {
   font-size: 1.5rem;
-  padding: 20px 0 0 20px;
+  padding: 10px 0 0 20px;
   color: #999999;
   transition: color 0.6s ease-in-out 0.3s;
 }
 @media screen and (min-width: 768px) {
   .portfolio-item-link .portfolio-item-container .item-detail-overlay-container .overlay-content .item-heading {
-    font-size: 1.4rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .portfolio-item-link .portfolio-item-container .item-detail-overlay-container .overlay-content .item-heading {
+    padding: 20px 0 0 20px;
   }
 }
 .portfolio-item-link .portfolio-item-container .item-detail-overlay-container .overlay-content .icon-container {
   float: left;
   margin: 0 10px 0 0;
   color: #999999;
-  font-size: 1.2rem;
+  font-size: .9rem;
 }
 .portfolio-item-link .portfolio-item-container .item-detail-overlay-container .overlay-content .icon-container:first-child {
   margin-left: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .portfolio-item-link .portfolio-item-container .item-detail-overlay-container .overlay-content .icon-container {
     font-size: 1rem;
   }

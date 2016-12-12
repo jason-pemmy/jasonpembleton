@@ -13,6 +13,9 @@
                     <a href="<?php echo $linkedin; ?>"><span class="icon-linkedin"></span></a>
                 </div>
 			</div>
+			<div class="col-sm-12 col-sm-6 contact-canvas">
+				
+			</div>
             <div class="col-sm-12 col-md-6 form-wrapper">
                 <?php  echo gravity_form( Contact, $display_title = false, $display_description = false, $display_inactive = false, $field_values = null, $ajax = false, $tabindex, $echo = true ); ?>
             </div>            
