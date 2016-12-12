@@ -19,6 +19,7 @@
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/
 .contact-section-container {
   background-color: #0066a4;
+  padding: 0 20px 0 20px;
 }
 .contact-section-container .contact-heading {
   padding-top: 50px;
@@ -27,13 +28,30 @@
 .contact-section-container .contact-heading h5 {
   color: #fff;
 }
+.contact-section-container .contact-info {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.contact-section-container .contact-info .info {
+  position: relative;
+  opacity: 0;
+}
+.contact-section-container .contact-info a {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.contact-section-container .contact-info a:hover {
+  text-decoration: none;
+  color: #f6bd41;
+}
 .contact-section-container .form-wrapper {
   margin-bottom: 20px;
-  background-color: #0069a9;
+  background-color: #006cae;
+  opacity: 0;
 }
 .contact-section-container .form-wrapper form {
   padding: 1rem;
-  background-color: #0069a9;
+  background-color: #006cae;
 }
 .contact-section-container .gform_body {
   width: 100% !important;
@@ -43,4 +61,24 @@
 }
 .contact-section-container .gform_body .ginput_container::after {
   color: #ff9999;
+}
+.contact-section-container .gform_body .gfield_label {
+  color: #f2f2f2;
+}
+.contact-section-container .gform_wrapper div.validation_error {
+  color: #ff9999;
+  border-top-color: #ff9999;
+  border-bottom-color: #ff9999;
+}
+.contact-section-container .gform_wrapper .gfield_error .gfield_label {
+  color: #ff9999;
+}
+.contact-section-container .gform_wrapper .validation_message {
+  color: #ff9999;
+}
+.contact-section-container button {
+  background-color: #f6bd41;
+}
+.contact-section-container button:hover {
+  background-color: #2e2d2d;
 }

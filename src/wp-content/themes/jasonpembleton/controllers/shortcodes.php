@@ -103,6 +103,17 @@ class TBK_Shortcodes extends Base_Factory {
 			),
 		) );
         
+        $this->register( 'secondary-hero-banner', array(
+			'show_settings_on_create' => true,
+			'params' => array(
+                array(					
+					'heading' => 'Heading',
+					'param_name' => 'heading',
+                    'type' => 'textfield',
+				),
+			),
+		) );
+        
         $this->register( 'portfolio-item', array(
 			'show_settings_on_create' => true,
 			'params' => array(
@@ -275,6 +286,14 @@ class TBK_Shortcodes extends Base_Factory {
         if(is_front_page()){
             return TBK_Render::shortcode_view( 'hero-banner', $atts );    
         }		
+	}
+    
+    function secondary_hero_banner( $atts ) {
+		$atts = shortcode_atts( array(
+			'heading' => null,
+		), $atts );
+        
+        return TBK_Render::shortcode_view( 'secondary-hero-banner', $atts );    	
 	}
     
     function portfolio_item( $atts ) {

@@ -67,6 +67,7 @@ class Theme_Enqueues extends Base_Factory {
 				Theme_Enqueues::iterate_enqueue( array(
 					'navbar-toggle',
 					'hero-banner',
+                    'secondary-hero-banner',
                     'portfolio-container',
                     'portfolio-item',
 					'about-section',

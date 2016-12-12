@@ -35,6 +35,9 @@
   padding: 0;
   list-style: none;
 }
+.about-section-skills .images-bar .images-bar-list li {
+  opacity: 0;
+}
 .about-section-skills .images-bar .images-bar-list .image-item {
   display: inline-block;
 }

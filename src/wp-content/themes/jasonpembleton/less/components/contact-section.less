@@ -22,24 +22,47 @@
 
 .contact-section-container {
     background-color: @jp-blue;
+    padding:0 20px 0 20px;        
+    
     .contact-heading {
         padding-top: 50px;
-        text-align: center;
+        text-align: center;        
+        
         h5 {
             color: @white;
         }
     }
     
     .contact-info {
+        font-size: 1.3rem;
+        color: @white;
+        //opacity: 0;
         
+        .info {
+            position: relative;
+            
+            opacity: 0;
+        }
+        
+        a {
+            color: @white;
+            transition: all .2s ease-in-out;
+            
+            &:hover {
+                text-decoration: none;
+                color: @jp-yellow;
+            }
+        }
     }
     
     .form-wrapper {
         margin-bottom: 20px;
-        background-color: lighten(@jp-blue, 1%);
+        background-color: lighten(@jp-blue, 2%);
+        opacity: 0;
+        
         form {            
             padding: 1rem;
-            background-color: lighten(@jp-blue, 1%);
+            background-color: lighten(@jp-blue, 2%);
         }
     }
     
@@ -50,6 +73,32 @@
         }
         .ginput_container::after {
             color: lighten(@red, 30%);    
+        }
+        
+        .gfield_label {
+            color: darken(@white, 5%);
+        }
+    }
+    
+    .gform_wrapper div.validation_error {
+        color: lighten(@red, 30%);
+        border-top-color: lighten(@red, 30%);
+        border-bottom-color: lighten(@red, 30%);
+    }
+    
+    .gform_wrapper .gfield_error .gfield_label {
+        color: lighten(@red, 30%);
+    }
+    
+    .gform_wrapper .validation_message {
+        color: lighten(@red, 30%);
+    }
+    
+    button {
+        background-color: @jp-yellow;
+        
+        &:hover {
+            background-color: @jp-grey;
         }
     }
 } 
