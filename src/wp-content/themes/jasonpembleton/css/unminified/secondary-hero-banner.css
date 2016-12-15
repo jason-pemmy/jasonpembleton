@@ -72,3 +72,18 @@
     font-size: 1.8rem;
   }
 }
+.drawing-gallery-page {
+  margin-top: 10px;
+}
+.drawing-gallery-page .images-bar .images-bar-list {
+  text-align: center;
+  margin-left: -40px;
+}
+.drawing-gallery-page .images-bar .images-bar-list .image-item {
+  display: inline;
+}
+.drawing-gallery-page .images-bar .images-bar-list .image-item img {
+  width: 95%;
+  max-width: 421px;
+  margin: 5px;
+}

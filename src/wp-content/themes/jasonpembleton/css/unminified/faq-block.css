@@ -28,7 +28,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: .4em;
-  color: #87c54e;
+  color: #000;
   transition: all ease .3s;
   content: "\e901";
 }
@@ -52,14 +52,14 @@
 }
 .vc_toggle .vc_toggle_title h4:hover,
 .vc_toggle .vc_toggle_title h4:focus {
-  color: #87c54e;
+  color: #000;
   cursor: pointer;
 }
 .vc_toggle_active {
   background: #f8f8f8;
 }
 .vc_toggle_active .vc_toggle_title h4 {
-  color: #87c54e;
+  color: #000;
 }
 .vc_toggle_active .vc_toggle_title:after {
   transform: rotate(-180deg);

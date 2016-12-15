@@ -126,13 +126,24 @@ module.exports = function (grunt){
 						'js_composer',
 
 						// base
+                        "base",
+                        "fonts",
+                        "icomoon",
+                        "typography",
 
 						// layout
-
+                        "footer.less",
+                        "header.less",
+                        "mobile-menu.less",
 						// components
 						'navbar-toggle',
 						'hero-banner',
-
+                        "about-section.less",
+                        "contact-section.less",
+                        "portfolio-container.less",
+                        "portfolio-item.less",
+                        "secondary-hero-banner.less",
+                        
 						// pages
 
 						// shame file
