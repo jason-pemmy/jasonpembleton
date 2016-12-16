@@ -6494,11 +6494,6 @@ a.list-group-item-danger.active:hover {
   border: 0;
 }
 
-.affix,
-.modal {
-  position: fixed;
-}
-
 .embed-responsive.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
@@ -6578,6 +6573,7 @@ button.close {
 
 .modal {
   display: none;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -6777,6 +6773,11 @@ button.close {
   border-radius: 4px;
 }
 
+.popover,
+.vc_txt_align_left {
+  text-align: left;
+}
+
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -6850,7 +6851,6 @@ button.close {
   padding: 1px;
   font-size: 14px;
   line-height: 1.42857143;
-  text-align: left;
   background-color: #fff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0,0,0,.2);
@@ -7352,6 +7352,10 @@ button.close {
 
 .hidden {
   visibility: hidden!important;
+}
+
+.affix {
+  position: fixed;
 }
 
 @-ms-viewport {
@@ -8927,10 +8931,6 @@ button.close {
 
 .vc_pixel_icon-video {
   background-image: url(../images/icons/video.png);
-}
-
-.vc_txt_align_left {
-  text-align: left;
 }
 
 .vc_txt_align_right {

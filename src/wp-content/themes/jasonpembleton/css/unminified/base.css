@@ -9,10 +9,14 @@ html {
 *::after {
   box-sizing: inherit;
 }
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+}
 body {
   position: relative;
   font-size: 1rem;
-  overflow-x: hidden;
 }
 body.disable-scrolling {
   overflow: hidden;

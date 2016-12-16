@@ -60,7 +60,7 @@ jQuery(function ($){
         mobileMenu.on("click",function(){
             root.toggleClass("mobile-menu-open");	
             body.toggleClass("disable-scrolling");
-            header.toggleClass("fix");
+            //header.toggleClass("fix");
         });
         
         mobileLink.on("click", function(){
@@ -69,7 +69,7 @@ jQuery(function ($){
                 if(!$(this).parent().hasClass("menu-item-has-children")) {
                     root.removeClass("mobile-menu-open");
                     body.removeClass("disable-scrolling");    
-                    header.removeClass("fix");
+                    header.removeClass("fix"); 
                 }
             }
         });
