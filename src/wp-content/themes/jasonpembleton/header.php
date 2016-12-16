@@ -27,7 +27,7 @@
 						</div>
 						<span class="btn-text sr-only"><?php _e( 'Menu', 'the-theme' ); ?></span>
 					</button>
-					<a class="navbar-brand" >Jason Pembleton</a>
+					<a class="navbar-brand" href="http://jasonpembleton.com">Jason Pembleton</a>
                     <div class="job-title">Front-end Developer</div>
 				</div>
 				<nav class="navbar-main" role="navigation">

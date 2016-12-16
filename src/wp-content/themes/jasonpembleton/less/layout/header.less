@@ -21,10 +21,12 @@
 @mq-xxxl-min: ~"screen and (min-width: @{screen-xxxl-min})";*/ 
 
 .navbar-default {
+    position: relative;
+    width: 100%;
 	height: 80px;
 	padding: 0;
 	margin-bottom: 0;
-	background-color: @jp-green;
+	background-color: @jp-green; 
 	border-color: @jp-green;
 	
 	.navbar-headers {
@@ -112,4 +114,8 @@
 			
         }
 	}	
+}
+
+.navbar-default.fix {
+    position: fixed;
 }

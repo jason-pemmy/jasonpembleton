@@ -73,7 +73,7 @@
   margin-top: 50px;
   background-color: rgba(35, 34, 34, 0.85);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 1000;
+  z-index: 100;
 }
 @media screen and (min-width: 992px) {
   .portfolio-item-link .portfolio-item-container .item-detail-overlay-container {
